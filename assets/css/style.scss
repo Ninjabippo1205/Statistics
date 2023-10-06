@@ -5,14 +5,17 @@
 
 #container_homeworks{
     width: 800px;
+    align-content: center;
 }
 
 .row{
+    align-items: center;
     width: 100%;
     color:red;
     border: 2px solid greenyellow;
 }
 .col{
+    align-items: center;
     width: 100%;
     color: burlywood;
     border: 1px solid violet;
