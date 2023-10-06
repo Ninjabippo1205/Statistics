@@ -19,6 +19,14 @@
             </div>
             <div class="r1c3HW1">
                 CODCIE E VIDEO 1
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <video controls width="640" height="360">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/blob/main/videos/HW1/Homework1_with_VBNET.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <div class="r2c2HW1">
                 JavaScript
