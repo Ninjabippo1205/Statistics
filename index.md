@@ -20,16 +20,18 @@
                     <div class="row">
                         <div class="col">
                             One of three columns
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             One of three columns
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             One of three columns
+                        </div>
                     </div>
-            </div>
                 </div>
             </div>
             <div class="row">
