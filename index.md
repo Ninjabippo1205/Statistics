@@ -18,9 +18,7 @@
             <div class="row">
                 <div class="col">           
                     <div class="row">
-                        <div class="col">
-                            Homework 1
-                        </div>
+                        Homework 1
                     </div>
                     <div class="col">
                         <div class="row">
