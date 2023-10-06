@@ -8,14 +8,13 @@
     grid-template:
       'aa aa aa'
       'bb cc cc'
-      'bb dd dd' /1fr 1fr 1fr;
+      'bb dd dd' /0.33fr 1.335fr 1.335fr;
     width: 100%;
 }
 
 .gridHomeworks > div{
     align-self: center;
     text-align: center;
-    border: 3px solid pink;
 }
 
 .homework{
@@ -29,16 +28,16 @@
 }
 .r1c1HW1{
     grid-area: bb;
-    padding-bottom: 20%;
+    padding-bottom: 1.5vw;
     color: white;
 }
 .r1c2HW1{
     grid-area: cc;
-    padding-bottom: 80%;
+    padding-bottom: 1.5vw;
     color: white;
 }
 .r2c2HW1{
     grid-area: dd;
-    padding-bottom: 80%;
+    padding-bottom: 1.5vw;
     color: white;
 }
