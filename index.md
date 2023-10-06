@@ -9,7 +9,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="container_homeworks">
             <div class="row">
                 <div class="col">
                     Homeworks
@@ -30,11 +30,6 @@
                     <div class="row">
                         <div class="col">
                             Parte 2
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            Parte 3
                         </div>
                     </div>
                 </div>

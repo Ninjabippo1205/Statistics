@@ -3,12 +3,16 @@
 
 @import "{{ site.theme }}";
 
+#container_homeworks{
+    width: 800px;
+}
+
 .row{
-    width: fit-content;
+    width: 100%;
     color:red;
     border: 2px solid greenyellow;
 }
 .col{
-    width: fit-content;
+    width: 100%;
     border: 1px solid violet;
 }
