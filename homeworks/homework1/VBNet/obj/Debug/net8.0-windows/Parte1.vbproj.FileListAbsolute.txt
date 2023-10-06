@@ -1,0 +1,16 @@
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\bin\Debug\net8.0-windows\Parte1.exe
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\bin\Debug\net8.0-windows\Parte1.deps.json
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\bin\Debug\net8.0-windows\Parte1.runtimeconfig.json
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\bin\Debug\net8.0-windows\Parte1.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\bin\Debug\net8.0-windows\Parte1.pdb
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.Form1.resources
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.vbproj.GenerateResource.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.AssemblyInfoInputs.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.AssemblyInfo.vb
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.vbproj.CoreCompileInputs.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\refint\Parte1.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.pdb
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\Parte1.genruntimeconfig.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\VBnet\Parte1\obj\Debug\net8.0-windows\ref\Parte1.dll

@@ -20,7 +20,7 @@
             <div class="r1c3HW1">
                 CODCIE E VIDEO 1
                 <div class="col">
-
+                    Il link per il codice in VBNet si trova al seguente link: 
                 </div>
                 <div class="col">
                     <video controls width="640" height="360">
