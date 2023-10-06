@@ -10,8 +10,8 @@
     </head>
     <body>
         <div class="container" id="container_homeworks">
-            <div class="row">
-                <div class="col">
+            <div class="row_1">
+                <div class="col_1_1">
                     Homeworks
                 </div>
             </div>
