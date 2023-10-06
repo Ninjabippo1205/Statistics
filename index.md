@@ -11,14 +11,35 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-sm">
-                    One of three columns
+                <div class="col">
+                    Homeworks
                 </div>
-                <div class="col-sm">
-                    One of three columns
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            One of three columns
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            One of three columns
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            One of three columns
+                    </div>
+            </div>
                 </div>
-                <div class="col-sm">
-                    One of three columns
+            </div>
+            <div class="row">
+                <div class="col">
+                    Homework 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Homework 3
                 </div>
             </div>
         </div>
