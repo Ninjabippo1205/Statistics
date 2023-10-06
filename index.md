@@ -13,13 +13,13 @@
             <div class="homework">
                 Homeworks
             </div>
-            <div class="r1c1HW">
+            <div class="r1c1HW1">
                 Homework 1
             </div>
-            <div class="r1c2HW">
+            <div class="r1c2HW1">
                 VBNet
             </div>
-            <div class="r1c3HW">
+            <div class="r2c2HW1">
                 JavaScript
             </div>
         </div>
