@@ -20,16 +20,6 @@
                     <div>        
                         Homework 1
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            VBNet
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            JavaScript
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
