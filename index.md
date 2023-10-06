@@ -18,9 +18,9 @@
                 VBNet
             </div>
             <div class="r1c3HW1">
-                CODCIE E VIDEO 1
+                Il link per il codice in VBNet si trova al seguente link: https://github.com/Ninjabippo1205/Statistics/tree/main/homeworks/homework1/VBNet
                 <div class="col">
-                    Il link per il codice in VBNet si trova al seguente link: 
+                    " "
                 </div>
                 <div class="col">
                     <video controls width="640" height="360">
