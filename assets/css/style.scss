@@ -15,6 +15,7 @@
 .gridHomeworks > div{
     align-self: center;
     text-align: center;
+    border: 3px solid pink;
 }
 
 .homework{
@@ -28,16 +29,16 @@
 }
 .r1c1HW1{
     grid-area: bb;
-    padding-bottom: 1.5vw;
+    padding-bottom: 20%;
     color: white;
 }
 .r1c2HW1{
     grid-area: cc;
-    padding-bottom: 1.5vw;
+    padding-bottom: 80%;
     color: white;
 }
 .r2c2HW1{
     grid-area: dd;
-    padding-bottom: 1.5vw;
+    padding-bottom: 80%;
     color: white;
 }
