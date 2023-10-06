@@ -24,13 +24,13 @@
                             Homework 1
                         </div>
                     </div>
-                    <div class="row_hw1_2">
-                        <div class="col_hw1_2_1">   
+                    <div class="col_hw1_1_2">
+                        <div class="row_hw1_2">   
                             <div>        
                                 VBNet
                             </div>
                         </div>
-                        <div class="col_hw1_2_1">   
+                        <div class="row_hw1_2">   
                             <div>        
                                 JavaScript
                             </div>
