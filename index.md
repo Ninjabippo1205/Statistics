@@ -16,20 +16,25 @@
                 </div>
             </div>
             <div class="row">
+                <div class="row">
+                    <div class="col">
+                        Homework 1
+                    </div>
+                </div>
                 <div class="col">
                     <div class="row">
                         <div class="col">
-                            One of three columns
+                            Parte 1
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            One of three columns
+                            Parte 2
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            One of three columns
+                            Parte 3
                         </div>
                     </div>
                 </div>
