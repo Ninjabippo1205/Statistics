@@ -3,37 +3,38 @@
 
 @import "{{ site.theme }}";
 
-#container_homeworks{
-    width: 800px;
-    align-content: center;
+.gridHomeworks{
+    display: grid;
+    grid-template:
+      'aa aa aa'
+      'bb cc cc'
+      'bb dd dd' /1fr 1fr 1fr;
+    width: 100%;
 }
 
-.row_1{
-    width: 100%;
-    color:red;
-    border: 2px solid greenyellow;
-}
-.col_1_1{
+.gridHomeworks > div{
+    align-self: center;
     text-align: center;
-    width: 100%;
-    color: burlywood;
-    border: 3px solid violet;
 }
 
-.row_hw1_1{
-    width: 100%;
-    color:red;
-    border: 2px solid greenyellow;
-}
-.col_hw1_1_1{
+.homework{
+    grid-area: aa;
+    color: #162d42;
+    font-size: 4vw;
     text-align: center;
-    width: 100%;
-    color: burlywood;
-    border: 3px solid violet;
+    font-family: 'Maven Pro', sans-serif;
+    padding-bottom: 0.5vw;
+    font-weight: bold;
 }
-
-.row_hw1_2{
-    width: 100%;
-    color:red;
-    border: 2px solid greenyellow;
+.r1c1HW{
+    grid-area: bb;
+    padding-bottom: 1.5vw;
+}
+.r1c2HW{
+    grid-area: cc;
+    padding-bottom: 1.5vw;
+}
+.r1c2HW{
+    grid-area: dd;
+    padding-bottom: 1.5vw;
 }

@@ -9,34 +9,18 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="container" id="container_homeworks">
-
-            <div class="row_1">
-                <div class="col_1_1">
-                    Homeworks
-                </div>
+        <div class="gridHomeworks">
+            <div class="homework">
+                Homeworks
             </div>
-
-            <div class="container" id="container_homework1">
-                <div class="row_hw1_1">
-                    <div class="col_hw1_1_1">   
-                        <div>        
-                            Homework 1
-                        </div>
-                    </div>
-                    <div class="col_hw1_1_2">
-                        <div class="row_hw1_2">   
-                            <div>        
-                                VBNet
-                            </div>
-                        </div>
-                        <div class="row_hw1_2">   
-                            <div>        
-                                JavaScript
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="r1c1HW">
+                Homework 1
+            </div>
+            <div class="r1c2HW">
+                VBNet
+            </div>
+            <div class="r1c3HW">
+                JavaScript
             </div>
         </div>
     </body>
