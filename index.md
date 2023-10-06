@@ -16,20 +16,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">           
-                    <div class="row">
+                <div class="col">   
+                    <div>        
                         Homework 1
                     </div>
-                    <div class="col">
-                        <div class="row">
-                            <div class="col">
-                                Parte 1
-                            </div>
+                    <div class="row">
+                        <div class="col">
+                            Parte 1
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                Parte 2
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            Parte 2
                         </div>
                     </div>
                 </div>
