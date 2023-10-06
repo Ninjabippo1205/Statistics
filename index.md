@@ -10,15 +10,31 @@
     </head>
     <body>
         <div class="container" id="container_homeworks">
+
             <div class="row_1">
                 <div class="col_1_1">
                     Homeworks
                 </div>
             </div>
-            <div class="row">
-                <div class="col">   
-                    <div>        
-                        Homework 1
+
+            <div class="container" id="container_homework1">
+                <div class="row_hw1_1">
+                    <div class="col_hw1_1_1">   
+                        <div>        
+                            Homework 1
+                        </div>
+                    </div>
+                    <div class="row_hw1_2">
+                        <div class="col_hw1_2_1">   
+                            <div>        
+                                VBNet
+                            </div>
+                        </div>
+                        <div class="col_hw1_2_1">   
+                            <div>        
+                                JavaScript
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
