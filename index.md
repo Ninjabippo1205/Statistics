@@ -17,8 +17,14 @@
             <div class="r1c2HW1">
                 VBNet
             </div>
+            <div class="r1c3HW1">
+                CODCIE E VIDEO 1
+            </div>
             <div class="r2c2HW1">
                 JavaScript
+            </div>
+            <div class="r2c3HW1">
+                CODICE E VIDEO 2
             </div>
         </div>
     </body>
