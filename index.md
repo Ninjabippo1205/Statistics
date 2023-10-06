@@ -22,24 +22,14 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            Parte 1
+                            VBNet
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            Parte 2
+                            JavaScript
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    Homework 2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    Homework 3
                 </div>
             </div>
         </div>
