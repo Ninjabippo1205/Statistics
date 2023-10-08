@@ -15,7 +15,7 @@
                 Homework 1
             </div>
             
-            <div class=r0c1HW1>
+            <div class="r0c1HW1">
                 theoretical part
             </div>
             <div class="r0c2HW1">
