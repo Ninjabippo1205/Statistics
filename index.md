@@ -38,6 +38,8 @@
             </div>
             <div class="r2c3HW1">
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework1/JavaScript/HW1JS.html'> link </a>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework1/JavaScript/HW1JS.html">link</a>
             </div>
         </div>
     </body>
