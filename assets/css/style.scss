@@ -7,6 +7,7 @@
     display: grid;
     grid-template:
       'aa aa aa'
+      'bb gg hh'
       'bb cc ee'
       'bb dd ff' /0.33fr 1.335fr 1.335fr;
     width: 100%;
@@ -26,6 +27,19 @@
     font-family: 'Maven Pro', sans-serif;
     padding-bottom: 0.5vw;
     font-weight: bold;
+}
+
+.r0c1HW1{
+    grid-area: gg;
+    padding-bottom: 1.5vw;
+    color: white;
+    text-align: center;
+}
+.r0c2HW1{
+    grid-area: hh;
+    padding-bottom: 1.5vw;
+    color: white;
+    text-align: center;
 }
 .r1c1HW1{
     grid-area: bb;
