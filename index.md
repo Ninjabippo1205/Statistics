@@ -37,7 +37,7 @@
                 JavaScript
             </div>
             <div class="r2c3HW1">
-                CODICE E VIDEO 2
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework1/JavaScript/HW1JS.html'> link </a>
             </div>
         </div>
     </body>
