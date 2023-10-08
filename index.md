@@ -16,7 +16,7 @@
             </div>
             
             <div class="r0c1HW1">
-                theoretical part
+                Theoretical part
             </div>
             <div class="r0c2HW1">
                 The answers to the theoretical questions can be found by clicking the <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework1/HW1%20Statistics.pdf">link</a>
