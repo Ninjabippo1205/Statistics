@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body style="background-color: black;">
+    <table style="margin-top: 25%; margin-left: 25%;">
+        <tr>
+            <td>
+                <canvas id="cerchioCanvas" width="200" height="200"></canvas>
+                <script>
+                    // Ottieni il riferimento al canvas
+                    var canvas = document.getElementById("cerchioCanvas");
+                    var context = canvas.getContext("2d");
+
+                    // Imposta il centro e il raggio del cerchio
+                    var centerX = canvas.width / 2;
+                    var centerY = canvas.height / 2;
+                    var radius = 95;
+
+                    // Imposta lo spessore della linea
+                    context.lineWidth = 5; // Puoi regolare lo spessore a tuo piacimento
+
+                    // Disegna solo la circonferenza
+                    context.beginPath();
+                    context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+                    context.strokeStyle = "yellowgreen"; // Colore della circonferenza
+                    context.stroke();
+                    context.closePath();
+                </script>
+            </td>
+            <td>
+                <canvas id="segmentoCanvas" width="200" height="200"></canvas>
+                <script>
+                    // Ottieni il riferimento al canvas
+                    var canvas = document.getElementById("segmentoCanvas");
+                    var context = canvas.getContext("2d");
+
+                    // Imposta le coordinate del punto iniziale e finale del segmento verticale
+                    var startX = canvas.width / 2;
+                    var startY = 0; // Regola la posizione iniziale verticale a tuo piacimento
+                    var endX = canvas.width / 2;
+                    var endY = 200; // Regola la posizione finale verticale a tuo piacimento
+
+                    // Imposta lo spessore della linea e il colore
+                    context.lineWidth = 5; // Puoi regolare lo spessore a tuo piacimento
+                    context.strokeStyle = "yellowgreen"; // Colore del segmento
+
+                    // Disegna il segmento verticale
+                    context.beginPath();
+                    context.moveTo(startX, startY);
+                    context.lineTo(endX, endY);
+                    context.stroke();
+                    context.closePath();
+                </script>
+            </td>
+            <td>
+                <canvas id="puntoCanvas" width="200" height="200"></canvas>
+                <script>
+                    var canvas = document.getElementById("puntoCanvas");
+                    var context = canvas.getContext("2d");
+
+                    // Imposta il centro e il raggio del cerchio
+                    var centerX = canvas.width / 2;
+                    var centerY = canvas.height / 2;
+                    var radius = 15;
+
+                    // Disegna il cerchio
+                    context.beginPath();
+                    context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+                    context.fillStyle = "yellowgreen"; // Colore del cerchio
+                    context.fill();
+                    context.closePath();
+                </script>
+            </td>
+            <td>
+                <canvas id="rettangoloCanvas" width="200" height="200"></canvas>
+                <script>
+                    // Ottieni il riferimento al canvas
+                    var canvas = document.getElementById("rettangoloCanvas");
+                    var context = canvas.getContext("2d");
+
+                    // Imposta le coordinate e le dimensioni del rettangolo
+                    var x = 5; // Coordinata x dell'angolo superiore sinistro
+                    var y = 25; // Coordinata y dell'angolo superiore sinistro
+                    var width = 190; // Larghezza del rettangolo
+                    var height = 150; // Altezza del rettangolo
+
+                    // Imposta lo spessore della linea del bordo e il colore di riempimento
+                    context.lineWidth = 2; // Puoi regolare lo spessore a tuo piacimento
+                    context.strokeStyle = "yellowgreen"; // Colore del bordo del rettangolo
+
+                    // Disegna il rettangolo
+                    context.beginPath();
+                    context.lineWidth = 5;
+                    context.rect(x, y, width, height); // Crea un rettangolo con le coordinate e le dimensioni specificate
+                    context.stroke(); // Disegna il bordo del rettangolo
+                    context.fill(); // Riempie il rettangolo con il colore specificato
+                    context.closePath();
+                </script>
+            </td>
+        </tr>
+    </table>
+</body>
