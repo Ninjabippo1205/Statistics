@@ -26,7 +26,7 @@
                 VBNet
             </div>
             <div class="r1c3HW1">                
-                The VBNet code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/homeworks/homework1/VBNet'>link</a> 
+                The VBNet code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework1/VBNet/Form1.vb'>link</a> 
                 <div class="col">
                     <video controls width="100%" height="75%">
                         <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW1/Homework1_with_VBNET.mp4" type="video/mp4">
