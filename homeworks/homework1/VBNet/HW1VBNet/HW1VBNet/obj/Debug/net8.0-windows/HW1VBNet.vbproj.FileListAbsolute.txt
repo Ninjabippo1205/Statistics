@@ -1,0 +1,16 @@
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\bin\Debug\net8.0-windows\HW1VBNet.exe
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\bin\Debug\net8.0-windows\HW1VBNet.deps.json
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\bin\Debug\net8.0-windows\HW1VBNet.runtimeconfig.json
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\bin\Debug\net8.0-windows\HW1VBNet.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\bin\Debug\net8.0-windows\HW1VBNet.pdb
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.Form1.resources
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.vbproj.GenerateResource.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.AssemblyInfoInputs.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.AssemblyInfo.vb
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.vbproj.CoreCompileInputs.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\refint\HW1VBNet.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.pdb
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\HW1VBNet.genruntimeconfig.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 1\Application\VBNet\HW1VBNet\HW1VBNet\obj\Debug\net8.0-windows\ref\HW1VBNet.dll
