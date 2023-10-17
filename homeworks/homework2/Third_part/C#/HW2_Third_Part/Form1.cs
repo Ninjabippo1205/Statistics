@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace HW2_es3_bis
+namespace HW2_Third_Part
 {
     public partial class Form1 : Form
     {
