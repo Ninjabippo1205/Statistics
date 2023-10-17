@@ -93,13 +93,26 @@ namespace HW2_es3_bis
                 }
 
                 chart1.Series.Clear();
+                chart1.ChartAreas[0].AxisX.CustomLabels.Clear();
+                double intervalWidth = 1.0 / k;
+                double labelShift = 0.5;
                 for (int i = 0; i < interv.Count; i++)
                 {
+
                     string seriesName = interv[i];
                     chart1.Series.Add(seriesName);
                     chart1.Series[seriesName].Points.AddXY("", columnHeights[i]);
                     chart1.ChartAreas[0].AxisX.LabelStyle.ForeColor = System.Drawing.Color.Black;
 
+                    int maxValue = columnHeights.Max();
+                    chart1.ChartAreas[0].AxisY.Maximum = maxValue + (int)Math.Pow(10, (int)Math.Log10(maxValue));
+                    chart1.Series[seriesName].IsValueShownAsLabel = true;
+
+                    double startX = i * intervalWidth - labelShift;
+                    double endX = (i + 1) * intervalWidth - labelShift;
+                    CustomLabel label = new CustomLabel(startX, endX, interv[i], 0, LabelMarkStyle.None);
+                    chart1.ChartAreas[0].AxisX.CustomLabels.Add(label);
+                    chart1.Series[seriesName]["PointWidth"] = "1";
                 }
             }
             else

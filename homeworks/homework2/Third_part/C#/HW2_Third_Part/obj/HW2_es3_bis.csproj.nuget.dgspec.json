@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_es3_bis\\HW2_es3_bis.csproj": {}
+    "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_Third_Part\\HW2_es3_bis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_es3_bis\\HW2_es3_bis.csproj": {
+    "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_Third_Part\\HW2_es3_bis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_es3_bis\\HW2_es3_bis.csproj",
+        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_Third_Part\\HW2_es3_bis.csproj",
         "projectName": "HW2_es3_bis",
-        "projectPath": "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_es3_bis\\HW2_es3_bis.csproj",
+        "projectPath": "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_Third_Part\\HW2_es3_bis.csproj",
         "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_es3_bis\\obj\\",
+        "outputPath": "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_Third_Part\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
