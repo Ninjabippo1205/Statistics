@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        td, th {
+            border: 3px solid yellowgreen;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background-color: black; color: white; text-align: center;">
+    <table id="ris" style="width: 100%; height: 200px; text-align: center;">
+        <form onsubmit="return calculate(event, random_variates, intervals)">
+            <tr>
+                <td colspan="2">
+                    Distribution of N random variates in [0,1) divided into k-1 classes
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Insert the number of uniform random variates (N):
+                </td>
+                <td>
+                    <input type="number" id="random_variates" name="random_variates" required value="12">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Insert the number of intervals (k):
+                </td>
+                <td>
+                    <input type="number" id="intervals" name="intervals" required value="4">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Calculate</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+    <table id="tableBody" style="width: 100%; height: 200px; text-align: center;">
+
+    </tbody>
+    <script>
+        function calculate(event, a, b) {
+            event.preventDefault(); // Evita il ricaricamento della pagina
+
+            const N = parseInt(a.value, 10);
+            const k = parseInt(b.value, 10);
+            const numeriCasuali = [];
+
+            for (let i = 0; i < N; i++) {
+                const numeroCasuale = Math.floor(Math.random()*100)/100;
+                numeriCasuali.push(numeroCasuale);
+            }
+
+            const intervalli = [];
+
+            for (let i = 0; i < k; i++) {
+                const inizio = i / k;
+                const fine = (i + 1) / k;
+                intervalli.push({ inizio, fine });
+            }
+
+            const dizionario = {};
+
+            for (let i = 0; i < k; i++) {
+                dizionario[i] = [];
+            }
+
+            for (let numero of numeriCasuali) {
+                for (let j = 0; j < k; j++) {
+                    if (numero >= intervalli[j].inizio && numero < intervalli[j].fine) {
+                        dizionario[j].push(numero);
+                        break;
+                    }
+                }
+            }
+
+            var table = document.getElementById("tableBody");
+
+            var rigaSeparatore = table.insertRow();
+            rigaSeparatore.style.height = "30px";
+            var cellaSeparatore = rigaSeparatore.insertCell(0);
+            cellaSeparatore.colSpan = 4;
+            cellaSeparatore.style.border = "0px";
+
+            var riga0 = table.insertRow();
+            var cella0 = riga0.insertCell(0);
+            cella0.colSpan = 3;
+            cella0.textContent = "Risultati usando " + N + " variabili e " + k + " intervalli";
+
+            intervalLabels = [];
+            intervalCounts = [];
+
+            for (let chiave in dizionario) {
+                var riga = table.insertRow();
+                var cella1 = riga.insertCell(0);
+                intervalLabels.push((parseInt(chiave)*(1/k)) + " - " + (parseInt(chiave)*(1/k) + 1/k));
+                cella1.textContent = "Intervallo " + (parseInt(chiave)*(1/k)) + " - " + (parseInt(chiave)*(1/k) + 1/k);
+                var cella2 = riga.insertCell(1);
+                cella2.textContent = dizionario[chiave].length;
+                var cella3 = riga.insertCell(2);
+                cella3.textContent = dizionario[chiave].join('  ,  ');
+                intervalCounts.push(dizionario[chiave].length);
+            }
+            var riga = table.insertRow();
+            var cella = riga.insertCell();
+            cella.colSpan = 3;
+
+            const canvas = document.createElement("canvas");
+            canvas.id = "histogramChart";
+            canvas.width = 400;
+            canvas.height = 200;
+
+            cella.appendChild(canvas);
+
+            const ctx = canvas.getContext("2d");
+
+            new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: intervalLabels,
+                    datasets: [
+                        {
+                            label: "Numero di elementi",
+                            data: intervalCounts,
+                            backgroundColor: "yellowgreen",
+                        },
+                    ],
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            stepSize: 1,
+                        },
+                    },
+                },
+            });
+
+        }
+    </script>
+</body>
+</html>

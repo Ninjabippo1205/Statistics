@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse; /* Per evitare spazi tra i bordi delle celle */
+        }
+    
+        th, td {
+            border: 3px solid yellowgreen; /* Stile del bordo e spessore (1px) */
+            padding: 8px; /* Spazio tra il contenuto e il bordo */
+            text-align: left; /* Allineamento del testo */
+        }
+
+        caption {
+            font-size: 30px;
+        }
+    </style>    
+</head>
+<body style="background-color: black; color: white; font-size: 12px;">
+    <script>
+        Enterpreneurial_attitude = {};
+        Enterpreneurial_attitude_arr = [];
+        Weight = {};
+        Weight_arr = [];
+        Hobbies = {};
+        Hobbies_arr = [];
+
+        const a = fetch('https://raw.githubusercontent.com/Ninjabippo1205/Statistics/main/homeworks/homework2/Dataset.csv')
+        .then((response) => {
+            return response.text();
+        })
+        .then((csvData) => {
+            const righe = csvData.split('\n');
+            for (let i = 1; i < righe.length; i++) {
+
+                const colonna0 = righe[i].split(',')[0];
+                Enterpreneurial_attitude_arr.push(colonna0);
+                const colonna1 = righe[i].split(',')[1];
+                Weight_arr.push(colonna1);
+                const colonna2 = righe[i].split(',')[2];
+                Hobbies_arr.push(colonna2)
+
+                if(Enterpreneurial_attitude[colonna0] != null){
+                    Enterpreneurial_attitude[colonna0] = Enterpreneurial_attitude[colonna0] + 1;
+                }else{
+                    Enterpreneurial_attitude[colonna0] = 1;
+                }
+
+                if(Weight[colonna1] != null){
+                    Weight[colonna1] = Weight[colonna1] + 1;
+                }else{
+                    Weight[colonna1] = 1;
+                }
+
+                if(Hobbies[colonna2] != null){
+                    Hobbies[colonna2] = Hobbies[colonna2] + 1;
+                }else{
+                    Hobbies[colonna2] = 1;
+                }
+            }
+
+            total_statistical_units = 0;
+            for(const [chiave, valore] of Object.entries(Enterpreneurial_attitude)){
+                total_statistical_units = total_statistical_units + Enterpreneurial_attitude[chiave];
+            }
+
+            //inizio tabella Qualitative variable
+            var table = document.createElement('table');
+
+            var caption = document.createElement('caption');
+            caption.textContent = 'Quantitative discrete variable (Enterpreneurial attitude)';
+            table.appendChild(caption);
+
+            var headerRow = document.createElement('tr');
+
+            var headerCells = [
+            'Variable',
+            'Absolute frequence',
+            'Relative frequence',
+            'Percentage'
+            ];
+
+            headerCells.forEach(function (text) {
+            var th = document.createElement('th');
+            th.textContent = text;
+            headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            for(const chiave in Enterpreneurial_attitude){
+                var tr2 = document.createElement('tr');
+                var td2 = document.createElement('td');
+                td2.textContent = chiave;
+                var td3 = document.createElement('td');
+                td3.textContent = Enterpreneurial_attitude[chiave];
+                var td4 = document.createElement('td');
+                td4.textContent = Enterpreneurial_attitude[chiave]/total_statistical_units;
+                var td5 = document.createElement('td');
+                td5.textContent = (Enterpreneurial_attitude[chiave]/total_statistical_units)*100;
+                tr2.appendChild(td2)
+                tr2.appendChild(td3)
+                tr2.appendChild(td4)
+                tr2.appendChild(td5)
+                table.appendChild(tr2)
+            }
+
+            document.body.appendChild(table);
+            //fine tabella Qualitative variable
+
+            //inizio tabella Quantitative discrete variable
+            var table = document.createElement('table');
+
+            var caption = document.createElement('caption');
+            caption.textContent = 'Quantitative continuous variable (Weight)';
+            table.appendChild(caption);
+
+            var headerRow = document.createElement('tr');
+
+            var headerCells = [
+            'Variable',
+            'Absolute frequence',
+            'Relative frequence',
+            'Percentage'
+            ];
+
+            headerCells.forEach(function (text) {
+            var th = document.createElement('th');
+            th.textContent = text;
+            headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            for(const chiave in Weight){
+                var tr2 = document.createElement('tr');
+                var td2 = document.createElement('td');
+                td2.textContent = chiave;
+                var td3 = document.createElement('td');
+                td3.textContent = Weight[chiave];
+                var td4 = document.createElement('td');
+                td4.textContent = Weight[chiave]/total_statistical_units;
+                var td5 = document.createElement('td');
+                td5.textContent = (Weight[chiave]/total_statistical_units)*100;
+                tr2.appendChild(td2)
+                tr2.appendChild(td3)
+                tr2.appendChild(td4)
+                tr2.appendChild(td5)
+                table.appendChild(tr2)
+            }
+
+            document.body.appendChild(table);
+            //fine tabella Quantitative discrete variable
+
+            //inizio tabella Quantitative continuous variable
+            var table = document.createElement('table');
+
+            var caption = document.createElement('caption');
+            caption.textContent = 'Qualitative variable (Hobbies)';
+            table.appendChild(caption);
+
+            var headerRow = document.createElement('tr');
+
+            var headerCells = [
+            'Variable',
+            'Absolute frequence',
+            'Relative frequence',
+            'Percentage'
+            ];
+
+            headerCells.forEach(function (text) {
+            var th = document.createElement('th');
+            th.textContent = text;
+            headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            for(const chiave in Hobbies){
+                var tr2 = document.createElement('tr');
+                var td2 = document.createElement('td');
+                td2.textContent = chiave;
+                var td3 = document.createElement('td');
+                td3.textContent = Hobbies[chiave];
+                var td4 = document.createElement('td');
+                td4.textContent = Hobbies[chiave]/total_statistical_units;
+                var td5 = document.createElement('td');
+                td5.textContent = (Hobbies[chiave]/total_statistical_units)*100;
+                tr2.appendChild(td2)
+                tr2.appendChild(td3)
+                tr2.appendChild(td4)
+                tr2.appendChild(td5)
+                table.appendChild(tr2)
+            }
+
+            document.body.appendChild(table);
+            //fine tabella Quantitative discrete variable
+
+            var table = document.createElement('table');
+
+            var caption = document.createElement('caption');
+            caption.textContent = 'Joint distribution (Enterpreneurial attitude-Hobbies)';
+            table.appendChild(caption);
+
+            var headerRow = document.createElement('tr');
+
+            var headerCells = [
+            'Variable 1',
+            'Variable 2',
+            'Absolute frequence',
+            'Relative frequence',
+            'Percentage'
+            ];
+
+            headerCells.forEach(function (text) {
+            var th = document.createElement('th');
+            th.textContent = text;
+            headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            const jointDistribution = {};
+
+            for (let i = 1; i < Enterpreneurial_attitude_arr.length; i++) {
+
+                if (!jointDistribution[Enterpreneurial_attitude_arr[i]]) {
+                    jointDistribution[Enterpreneurial_attitude_arr[i]] = {};
+                }
+
+                if (!jointDistribution[Enterpreneurial_attitude_arr[i]][Hobbies_arr[i]]) {
+                    jointDistribution[Enterpreneurial_attitude_arr[i]][Hobbies_arr[i]] = 0;
+                }
+
+                jointDistribution[Enterpreneurial_attitude_arr[i]][Hobbies_arr[i]]++;
+            }
+
+            for(const val1 in jointDistribution){
+                for(const val2 in jointDistribution[val1]){
+                    var tr2 = document.createElement('tr');
+                    var td2 = document.createElement('td');
+                    td2.textContent = val1;
+                    var td6 = document.createElement('td');
+                    td6.textContent = val2;
+                    var td3 = document.createElement('td');
+                    td3.textContent = jointDistribution[val1][val2];
+                    var td4 = document.createElement('td');
+                    td4.textContent = jointDistribution[val1][val2]/total_statistical_units;
+                    var td5 = document.createElement('td');
+                    td5.textContent = (jointDistribution[val1][val2]/total_statistical_units)*100;
+                    tr2.appendChild(td2);
+                    tr2.appendChild(td6);
+                    tr2.appendChild(td3);
+                    tr2.appendChild(td4);
+                    tr2.appendChild(td5);
+                    table.appendChild(tr2);
+                }
+            }
+
+            document.body.appendChild(table);
+
+        })
+    </script>
+</body>

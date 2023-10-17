@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h+Mc4FtTqWPmKZrpD9zakFPF1CVJlYo1C1b5sCDscnqfGay0XsemQQprQf4yVwM5DbRaN324ro255yBAUAMiuQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 2\\Application\\C#\\HW2_es3_bis\\HW2_es3_bis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\filip\\.nuget\\packages\\winforms.datavisualization\\1.9.0\\winforms.datavisualization.1.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}
