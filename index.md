@@ -79,13 +79,13 @@
                 C#
             </div>
             <div class="r3c4HW2">                
-                Per C# clicca qui
+                The C# cheatsheet can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/Second_Part/C%23/Cheatsheet.cs'>link</a> 
             </div>
             <div class="r3c3HW2">
                 JavaScript
             </div>
             <div class="r3c5HW2">                
-                Per JavaScript clicca qui
+                The JavaScript cheatsheet can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/Second_Part/JavaScript/Cheatsheet.js'>link</a> 
             </div>
 
             <div class="r4c1HW2">
@@ -95,13 +95,20 @@
                 C#
             </div>
             <div class="r4c4HW2">                
-                Per C# clicca qui
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/Third_part/C%23/HW2_Third_Part/Form1.cs'>link</a> 
+                <div class="col">
+                    <video controls width="100%" height="75%">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW2/HW2_Third_Part.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <div class="r4c3HW2">
                 JavaScript
             </div>
             <div class="r4c5HW2">                
-                Per JavaScript clicca qui
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/Third_part/JavaScript/HW2_Third_Part.html'> link </a>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework2/Third_part/JavaScript/HW2_Third_Part.html">link</a>
             </div>
         </div>
     </body>
