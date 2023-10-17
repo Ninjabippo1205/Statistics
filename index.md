@@ -66,7 +66,9 @@
                 JavaScript
             </div>
             <div class="r2c5HW2">                
-                Per JavaScript clicca qui
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/First_Part/JavaScript/HW2_First_Part.html'> link </a>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework2/First_Part/JavaScript/HW2_First_Part.html">link</a>
             </div>
             
 
