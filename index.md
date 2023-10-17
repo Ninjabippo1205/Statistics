@@ -7,7 +7,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="gridHomeworks">
+        <div class="gridHomework1">
             <div class="homework">
                 Homeworks
             </div>
@@ -41,62 +41,60 @@
 
                 The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework1/JavaScript/HW1JS.html">link</a>
             </div>
+        </div>
 
-            <div class="HW2">
-                <div class="gridHomework2">
-                    <div class="r1HW2">
-                        Homework 2
-                    </div>
-                    
-                    <div class="r2c1HW2">
-                        First part
-                    </div>
-                    <div class="r2c2HW2">                
-                        C#
-                    </div>
-                    <div class="r2c4HW2">                
-                        Per C# clicca qui
-                    </div>
-                    <div class="r2c3HW2">
-                        JavaScript
-                    </div>
-                    <div class="r2c5HW2">                
-                        Per JavaScript clicca qui
-                    </div>
-                    
+        <div class="gridHomework2">
+            <div class="r1HW2">
+                Homework 2
+            </div>
+            
+            <div class="r2c1HW2">
+                First part
+            </div>
+            <div class="r2c2HW2">                
+                C#
+            </div>
+            <div class="r2c4HW2">                
+                Per C# clicca qui
+            </div>
+            <div class="r2c3HW2">
+                JavaScript
+            </div>
+            <div class="r2c5HW2">                
+                Per JavaScript clicca qui
+            </div>
+            
 
-                    <div class="r3c1HW2">
-                        Second part
-                    </div>
-                    <div class="r3c2HW2">                
-                        C#
-                    </div>
-                    <div class="r3c4HW2">                
-                        Per C# clicca qui
-                    </div>
-                    <div class="r3c3HW2">
-                        JavaScript
-                    </div>
-                    <div class="r3c5HW2">                
-                        Per JavaScript clicca qui
-                    </div>
+            <div class="r3c1HW2">
+                Second part
+            </div>
+            <div class="r3c2HW2">                
+                C#
+            </div>
+            <div class="r3c4HW2">                
+                Per C# clicca qui
+            </div>
+            <div class="r3c3HW2">
+                JavaScript
+            </div>
+            <div class="r3c5HW2">                
+                Per JavaScript clicca qui
+            </div>
 
-                    <div class="r4c1HW2">
-                        Third part
-                    </div>
-                    <div class="r4c2HW2">                
-                        C#
-                    </div>
-                    <div class="r4c4HW2">                
-                        Per C# clicca qui
-                    </div>
-                    <div class="r4c3HW2">
-                        JavaScript
-                    </div>
-                    <div class="r4c5HW2">                
-                        Per JavaScript clicca qui
-                    </div>
-                </div>
+            <div class="r4c1HW2">
+                Third part
+            </div>
+            <div class="r4c2HW2">                
+                C#
+            </div>
+            <div class="r4c4HW2">                
+                Per C# clicca qui
+            </div>
+            <div class="r4c3HW2">
+                JavaScript
+            </div>
+            <div class="r4c5HW2">                
+                Per JavaScript clicca qui
             </div>
         </div>
     </body>

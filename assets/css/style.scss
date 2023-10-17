@@ -3,18 +3,17 @@
 
 @import "{{ site.theme }}";
 
-.gridHomeworks{
+.gridHomework1{
     display: grid;
     grid-template:
       'aa aa aa'
       'bb gg hh'
       'bb cc ee'
-      'bb dd ff'
-      'ii ii ii' /0.33fr 1.335fr 1.335fr;
+      'bb dd ff'/0.33fr 1.335fr 1.335fr;
     width: 100%;
 }
 
-.gridHomeworks > div{
+.gridHomework1 > div{
     align-self: center;
     text-align: center;
     border: 3px solid yellowgreen;
@@ -68,11 +67,6 @@
     color: white;
 }
 
-.HW2{
-    grid-area: ii;
-    color: white;
-}
-
 .gridHomework2{
     display: grid;
     grid-template:
@@ -83,6 +77,17 @@
       'a l m n'
       'a l p q'/0.33fr 1.223fr 1.223fr 1.223fr;
     width: 100%;
+}
+
+.gridHomework2 > div{
+    align-self: center;
+    text-align: center;
+    border: 3px solid yellowgreen;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    align-items: center;
 }
 
 .r1HW2{
