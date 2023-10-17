@@ -55,7 +55,12 @@
                 C#
             </div>
             <div class="r2c4HW2">                
-                Per C# clicca qui
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/First_Part/C%23/HW2_First_Part/Form1.cs'>link</a> 
+                <div class="col">
+                    <video controls width="100%" height="75%">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW2/HW2_First_Part.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
             <div class="r2c3HW2">
                 JavaScript
