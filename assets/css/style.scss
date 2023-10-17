@@ -9,7 +9,8 @@
       'aa aa aa'
       'bb gg hh'
       'bb cc ee'
-      'bb dd ff' /0.33fr 1.335fr 1.335fr;
+      'bb dd ff'
+      'ii ii ii' /0.33fr 1.335fr 1.335fr;
     width: 100%;
 }
 
@@ -64,5 +65,83 @@
 }
 .r2c3HW1{
     grid-area: ff;
+    color: white;
+}
+
+.gridHomework2{
+    display: grid;
+    grid-template:
+      'a b c e'
+      'a b d f'
+      'a g h i'
+      'a g j k'
+      'a l m n'
+      'a l p q'/0.33fr 1.223fr 1.223fr 1.223fr;
+    width: 100%;
+}
+
+.r1HW2{
+    grid-area: a;
+    color: white;
+}
+.r2c1HW2{
+    grid-area: b;
+    color: white;
+}
+.r2c2HW2{
+    grid-area: c;
+    color: white;
+}
+.r2c3HW2{
+    grid-area: d;
+    color: white;
+}
+.r2c4HW2{
+    grid-area: e;
+    color: white;
+}
+.r2c5HW2{
+    grid-area: f;
+    color: white;
+}
+.r3c1HW2{
+    grid-area: g;
+    color: white;
+}
+.r3c2HW2{
+    grid-area: h;
+    color: white;
+}
+.r3c3HW2{
+    grid-area: j;
+    color: white;
+}
+.r3c4HW2{
+    grid-area: i;
+    color: white;
+}
+.r3c5HW2{
+    grid-area: k;
+    color: white;
+}
+.r4c1HW2{
+    grid-area: l;
+    color: white;
+}
+.r4c2HW2{
+    grid-area: m;
+    color: white;
+}
+.r4c3HW2{
+    grid-area: p;
+    color: white;
+}
+.r4c4HW2{
+    grid-area: n;
+    color: white;
+}
+
+.r4c5HW2{
+    grid-area: q;
     color: white;
 }
