@@ -109,6 +109,14 @@
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/Third_part/JavaScript/HW2_Third_Part.html'> link </a>
 
                 The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework2/Third_part/JavaScript/HW2_Third_Part.html">link</a>
+                
+                <br>
+                
+                By fixing k and modifying N we can see that for small values of N, the distribution is not homogeneous. In other words, there are intervals in which there are many more elements than in others. However, if we choose a high number for N we can observe that the columns are all quite similar.
+
+                Conversely, if we fix N and change k we can notice that for small values of k the columns are relatively similar. Nevertheless, as k increases, the differences between the columns start to grow, resulting in some columns being much higher than others.
+
+                In conclusion, when N is significantly larger than k the columns tend to be more equal. However, if N is not much higher than k the differences between the columns become much more evident.
             </div>
         </div>
     </body>
