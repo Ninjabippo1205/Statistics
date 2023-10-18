@@ -27,6 +27,9 @@
             </div>
             <div class="r1c3HW1">                
                 The VBNet code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework1/VBNet/HW1VBNet/HW1VBNet/Form1.vb'>link</a> 
+
+                <br>
+
                 <div class="col">
                     <video controls width="100%" height="75%">
                         <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW1/Homework1_with_VBNET.mp4" type="video/mp4">
@@ -38,6 +41,8 @@
             </div>
             <div class="r2c3HW1">
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework1/JavaScript/HW1JS.html'> link </a>
+
+                <br>
 
                 The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework1/JavaScript/HW1JS.html">link</a>
             </div>
@@ -56,6 +61,9 @@
             </div>
             <div class="r2c4HW2">                
                 The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/First_Part/C%23/HW2_First_Part/Form1.cs'>link</a> 
+
+                <br>
+
                 <div class="col">
                     <video controls width="100%" height="75%">
                         <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW2/HW2_First_Part.mp4" type="video/mp4">
@@ -67,6 +75,8 @@
             </div>
             <div class="r2c5HW2">                
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/First_Part/JavaScript/HW2_First_Part.html'> link </a>
+
+                <br>
 
                 The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework2/First_Part/JavaScript/HW2_First_Part.html">link</a>
             </div>
@@ -96,6 +106,9 @@
             </div>
             <div class="r4c4HW2">                
                 The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/Third_part/C%23/HW2_Third_Part/Form1.cs'>link</a> 
+                
+                <br>
+
                 <div class="col">
                     <video controls width="100%" height="75%">
                         <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW2/HW2_Third_Part.mp4" type="video/mp4">
@@ -108,15 +121,14 @@
             <div class="r4c5HW2">                
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/Third_part/JavaScript/HW2_Third_Part.html'> link </a>
 
-                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework2/Third_part/JavaScript/HW2_Third_Part.html">link</a>
-                
                 <br>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework2/Third_part/JavaScript/HW2_Third_Part.html">link</a>
+
+                <br>
+
+                The conclusions regarding the shape of the distribution can be located <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/Third_part/HW2_Third_Part.pdf'>here</a>
                 
-                By fixing k and modifying N we can see that for small values of N, the distribution is not homogeneous. In other words, there are intervals in which there are many more elements than in others. However, if we choose a high number for N we can observe that the columns are all quite similar.
-
-                Conversely, if we fix N and change k we can notice that for small values of k the columns are relatively similar. Nevertheless, as k increases, the differences between the columns start to grow, resulting in some columns being much higher than others.
-
-                In conclusion, when N is significantly larger than k the columns tend to be more equal. However, if N is not much higher than k the differences between the columns become much more evident.
             </div>
         </div>
     </body>
