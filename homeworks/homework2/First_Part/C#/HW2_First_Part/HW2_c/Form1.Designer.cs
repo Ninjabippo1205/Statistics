@@ -40,6 +40,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.FromArgb(64, 64, 64);
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(12, 12);
             dataGridView1.Name = "dataGridView1";
@@ -50,6 +51,7 @@
             // 
             // dataGridView2
             // 
+            dataGridView2.BackgroundColor = Color.FromArgb(64, 64, 64);
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(1437, 12);
             dataGridView2.Name = "dataGridView2";
@@ -59,6 +61,7 @@
             // 
             // dataGridView3
             // 
+            dataGridView3.BackgroundColor = Color.FromArgb(64, 64, 64);
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Location = new Point(12, 773);
             dataGridView3.Name = "dataGridView3";
@@ -68,6 +71,7 @@
             // 
             // dataGridView4
             // 
+            dataGridView4.BackgroundColor = Color.FromArgb(64, 64, 64);
             dataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView4.Location = new Point(1437, 773);
             dataGridView4.Name = "dataGridView4";
@@ -79,6 +83,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
             ClientSize = new Size(2770, 1475);
             Controls.Add(dataGridView4);
             Controls.Add(dataGridView3);
