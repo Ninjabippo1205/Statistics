@@ -64,7 +64,7 @@
                 total_statistical_units = total_statistical_units + Enterpreneurial_attitude[chiave];
             }
 
-            //inizio tabella Qualitative variable
+            //inizio tabella
             var table = document.createElement('table');
 
             var caption = document.createElement('caption');
@@ -105,9 +105,9 @@
             }
 
             document.body.appendChild(table);
-            //fine tabella Qualitative variable
+            //fine tabella
 
-            //inizio tabella Quantitative discrete variable
+            //inizio tabella
             var table = document.createElement('table');
 
             var caption = document.createElement('caption');
@@ -117,29 +117,52 @@
             var headerRow = document.createElement('tr');
 
             var headerCells = [
-            'Variable',
-            'Absolute frequence',
-            'Relative frequence',
-            'Percentage'
+                'Variable',
+                'Absolute frequence',
+                'Relative frequence',
+                'Percentage'
             ];
 
             headerCells.forEach(function (text) {
-            var th = document.createElement('th');
-            th.textContent = text;
-            headerRow.appendChild(th);
+                var th = document.createElement('th');
+                th.textContent = text;
+                headerRow.appendChild(th);
             });
             table.appendChild(headerRow);
 
+            var chiavi = [];
             for(const chiave in Weight){
+               chiavi.push((parseFloat(chiave)));
+            }
+            chiavi.sort();
+            var min = parseFloat(chiavi[0]);
+            var max = parseFloat(chiavi[chiavi.length - 1]);
+            var inter = {};
+            for(var i = parseInt(min)-6; i < parseInt(max); i++){
+                if(parseInt(i)%5 == 0){
+                    inter[parseInt(i) + "-" + parseInt(i+5)] = 0;
+                }
+            }
+            for(const chiave in Weight){
+                for(const int in inter){
+                    var inf = int.split("-")[0];
+                    var sup = int.split("-")[1];
+                    if(parseFloat(chiave) >= inf  && parseFloat(chiave) < sup){
+                        inter[inf + "-" + sup] += Weight[chiave];
+                    }
+                }
+            }
+
+            for(const chiave in inter){
                 var tr2 = document.createElement('tr');
                 var td2 = document.createElement('td');
                 td2.textContent = chiave;
                 var td3 = document.createElement('td');
-                td3.textContent = Weight[chiave];
+                td3.textContent = inter[chiave];
                 var td4 = document.createElement('td');
-                td4.textContent = Weight[chiave]/total_statistical_units;
+                td4.textContent = inter[chiave]/total_statistical_units;
                 var td5 = document.createElement('td');
-                td5.textContent = (Weight[chiave]/total_statistical_units)*100;
+                td5.textContent = (inter[chiave]/total_statistical_units)*100;
                 tr2.appendChild(td2)
                 tr2.appendChild(td3)
                 tr2.appendChild(td4)
@@ -148,9 +171,9 @@
             }
 
             document.body.appendChild(table);
-            //fine tabella Quantitative discrete variable
+            //fine tabella
 
-            //inizio tabella Quantitative continuous variable
+            //inizio tabella
             var table = document.createElement('table');
 
             var caption = document.createElement('caption');
@@ -191,8 +214,9 @@
             }
 
             document.body.appendChild(table);
-            //fine tabella Quantitative discrete variable
+            //fine tabella
 
+            //inizio tabella
             var table = document.createElement('table');
 
             var caption = document.createElement('caption');
@@ -254,6 +278,7 @@
             }
 
             document.body.appendChild(table);
+            //fine tabella
 
         })
     </script>
