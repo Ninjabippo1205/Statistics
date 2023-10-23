@@ -60,7 +60,7 @@
                 C#
             </div>
             <div class="r2c4HW2">                
-                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/First_Part/C%23/HW2_First_Part/Form1.cs'>link</a> 
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework2/First_Part/C%23/HW2_First_Part/HW2_c/Form1.cs'>link</a> 
 
                 <br>
 
