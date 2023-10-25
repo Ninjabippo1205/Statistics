@@ -144,7 +144,7 @@
                 C#
             </div>
             <div class="r2c4HW3">                
-                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/Attack.cs'>link1</a> and <a href'https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/AttackForm.cs'>link2</a>
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/Attack.cs'>link1</a> and <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/AttackForm.cs'>link2</a>
 
                 <br>
 
