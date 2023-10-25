@@ -143,21 +143,25 @@
             <div class="r2c2HW3">                
                 C#
             </div>
-            <div class="r2c4HW3">                
+            <div class="r2c4HW3">      
+                The code was made by Filippo Olimpieri (1933529), Noemi Giustini (1933541), Ludovica Garufi (1962596) and Filippo Guerra (1931976)
+                <br>          
                 The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/Attack.cs'>link1</a> and <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/AttackForm.cs'>link2</a>
 
                 <br>
 
                 <div class="col">
                     <video controls width="100%" height="75%">
-                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW3/HW3_C#.mp4" type="video/mp4">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW3/HW3_C%23.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
             <div class="r2c3HW3">
                 JavaScript
             </div>
-            <div class="r2c5HW3">                
+            <div class="r2c5HW3">      
+                The code was made by Filippo Olimpieri (1933529), Noemi Giustini (1933541), Ludovica Garufi (1962596) and Filippo Guerra (1931976)      
+                <br>    
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/JavaScript/HW3_JS.html'> link </a>
 
                 <br>
