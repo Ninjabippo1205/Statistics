@@ -144,7 +144,9 @@
                 C#
             </div>
             <div class="r2c4HW3">      
-                The code was made by Filippo Olimpieri (1933529), Noemi Giustini (1933541), Ludovica Garufi (1962596) and Filippo Guerra (1931976)
+                <div>
+                    The code was made by Filippo Olimpieri (1933529), Noemi Giustini (1933541), Ludovica Garufi (1962596) and Filippo Guerra (1931976)
+                </div>
                 <br>          
                 The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/Attack.cs'>link1</a> and <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/AttackForm.cs'>link2</a>
 
@@ -159,8 +161,10 @@
             <div class="r2c3HW3">
                 JavaScript
             </div>
-            <div class="r2c5HW3">      
-                The code was made by Filippo Olimpieri (1933529), Noemi Giustini (1933541), Ludovica Garufi (1962596) and Filippo Guerra (1931976)      
+            <div class="r2c5HW3">    
+                <div>  
+                    The code was made by Filippo Olimpieri (1933529), Noemi Giustini (1933541), Ludovica Garufi (1962596) and Filippo Guerra (1931976)      
+                </div>
                 <br>    
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/JavaScript/HW3_JS.html'> link </a>
 
