@@ -131,5 +131,47 @@
                 
             </div>
         </div>
+
+        <div class="gridHomework3">
+            <div class="r1HW3">
+                Homework 3
+            </div>
+            
+            <div class="r2c1HW3">
+                First part
+            </div>
+            <div class="r2c2HW3">                
+                C#
+            </div>
+            <div class="r2c4HW3">                
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/Attack.cs'>link1</a> and <a href'https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/C%23/HW3_C/AttackForm.cs'>link2</a>
+
+                <br>
+
+                <div class="col">
+                    <video controls width="100%" height="75%">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW3/HW3_C#.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="r2c3HW3">
+                JavaScript
+            </div>
+            <div class="r2c5HW3">                
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/First_Part/JavaScript/HW3_JS.html'> link </a>
+
+                <br>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework3/First_Part/JavaScript/HW3_JS.html">link</a>
+            </div>
+            
+
+            <div class="r3c1HW3">
+                Second part
+            </div>
+            <div class="r3c2HW3">                
+                The answers to exercise 2 can be found on this <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/Second_Part/HW3.pdf'>page</a>
+            </div>
+        </div>
     </body>
 </html>

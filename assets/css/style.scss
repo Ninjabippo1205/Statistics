@@ -155,3 +155,56 @@
     grid-area: q;
     color: white;
 }
+
+.gridHomework3{
+    display: grid;
+    grid-template:
+      'aaa bbb ccc eee'
+      'aaa bbb ddd fff'
+      'aaa ggg hhh hhh'/110px 180px 110px 1fr;
+    width: 100%;
+}
+
+.gridHomework3 > div{
+    align-self: center;
+    text-align: center;
+    border: 3px solid yellowgreen;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+
+.r1HW3{
+    grid-area: aaa;
+    color: white;
+}
+.r2c1HW3{
+    grid-area: bbb;
+    color: white;
+}
+.r2c2HW3{
+    grid-area: ccc;
+    color: white;
+}
+.r2c3HW3{
+    grid-area: ddd;
+    color: white;
+}
+.r2c4HW3{
+    grid-area: eee;
+    color: white;
+}
+.r2c5HW3{
+    grid-area: fff;
+    color: white;
+}
+.r3c1HW3{
+    grid-area: ggg;
+    color: white;
+}
+.r3c2HW3{
+    grid-area: hhh;
+    color: white;
+}
