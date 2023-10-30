@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        td, th {
+            border: 3px solid yellowgreen;
+        }
+    </style>
+    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+</head>
+<body style="background-color: black; color: white; text-align: center;">
+    <table id="ris" style="width: 100%; height: 200px; text-align: center;">
+        <form onsubmit="return addIntervals()">
+            <tr>
+                <td colspan="5">
+                    Joint distribution of any number of 2,3, ...k, continuous quantitative variables
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Insert the number variables: 
+                </td>
+                <td>
+                    <input type="number" id="columns" name="columns" required value="4">
+                </td>
+                <td>
+                    Insert the number of examples for each variable: 
+                </td>
+                <td>
+                    <input type="number" id="number" name="number" required value="10">
+                </td>
+                <td>
+                    <button type="submit">Choose the intervals</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+    <table id="tableBody" style="width: 100%; height: 200px; text-align: center;">
+    </table>
+    <table id="tableJoin" style="width: 100%; height: 200px; text-align: left; color: white;">
+    </table>
+    
+<script>
+    function addIntervals(){
+        event.preventDefault();
+        var existingRow = document.getElementById("rowJoin");
+        while(existingRow){
+            existingRow = document.getElementById("rowJoin");
+            if (existingRow) {
+                existingRow.parentNode.removeChild(existingRow);
+            }
+        }
+        var columns = document.getElementById("columns").value;
+        var number = document.getElementById("number").value;
+        if(!columns){
+            alert("You must choose the number of variables");
+            return null;
+        }
+        if(!number){
+            alert("You must choose the number of examples for each variable");
+            return null;
+        }
+        var table = document.getElementById("tableBody");
+        table.innerHTML = ""; // Pulisce la tabella precedente
+        
+        for(var i = 0; i < columns; i++){
+            var row = table.insertRow();
+            var cell = row.insertCell(0);
+            cell.textContent = "Chose the interlavs number for variabile " + i + "\t\t";
+            var input = document.createElement("input");
+            input.id = "input" + i;
+            input.type = "text";
+            input.value = i+1; //Da togliere
+            cell.appendChild(input);
+        }
+
+        var existingButton = document.getElementById("calculateButton");
+        if (existingButton) {
+            existingButton.parentNode.removeChild(existingButton);
+        }
+        var submitButton = document.createElement("input");
+        submitButton.id = "calculateButton";
+        submitButton.type = "submit";
+        submitButton.value = "Calcola";
+        submitButton.onclick = calcola;
+
+        var form = document.createElement("form");
+        form.id = "intervalForm";
+        form.appendChild(submitButton);
+        document.body.appendChild(form);
+        var rowF = table.insertRow();
+        rowF.id="rowF";
+        var cellF = rowF.insertCell();
+        cellF.appendChild(form);
+    }
+
+    function generateRandomNumbers(n, min, max) {
+        var randomNumbers = [];
+        for (var i = 0; i < n; i++) {
+            var randomNumber = (Math.random()).toFixed(1);
+            randomNumbers.push(randomNumber);
+        }
+        return randomNumbers;
+    }
+
+    function getAllCombinations(arrays, index, currentCombination, result) {
+        if (index === arrays.length) {
+            result.push(currentCombination.slice());
+            return;
+        }
+
+        for (var i = 0; i < arrays[index].length; i++) {
+            currentCombination.push(arrays[index][i]);
+            getAllCombinations(arrays, index + 1, currentCombination, result);
+            currentCombination.pop();
+        }
+    }
+
+    function calcola() {
+        event.preventDefault();
+
+        var existingRow = document.getElementById("rowJoin");
+        while(existingRow){
+            existingRow = document.getElementById("rowJoin");
+            if (existingRow) {
+                existingRow.parentNode.removeChild(existingRow);
+            }
+        }
+
+        var columns = document.getElementById("columns").value;
+        if(!columns){
+            alert("You must choose the number of variables");
+            return null;
+        }
+        for(var i = 0; i < columns; i++){
+            var intervallo = document.getElementById("input" + i).value;
+            if(!intervallo){
+                alert("You must choose the interval for variable " + i);
+                return null;
+            }
+        }
+
+        let intervalli = [];
+        for(var i = 0; i < columns; i++){
+            var intervallo = document.getElementById("input" + i).value;
+            let tmp = [];
+            for(var j = 0; j < 1; j += 1/intervallo){
+                var inizio = j;
+                var fine = (inizio + 1/intervallo);
+                var int = inizio + "-" + fine;
+                tmp.push(int);
+            }
+            intervalli.push(tmp);
+        }
+        
+        var dataset = [];
+        var minNumber = 0;
+        var maxNumber = 1;
+        for(var i = 0; i < columns; i++){
+            var randomNumbers = generateRandomNumbers(number.value, minNumber, maxNumber);
+            dataset[i] = randomNumbers;
+        }
+
+        var datasetIntervalli = []
+        for(var i = 0; i < columns; i++){
+            var tmp = [];
+            for(var j = 0; j < dataset[i].length; j++){
+                for(var k = 0; k < intervalli[i].length; k++){
+                    var int = intervalli[i][k].split("-");
+                    let inf = int[0];
+                    let sup = int[1];
+
+                    if(dataset[i][j] >= inf && dataset[i][j] < sup ){
+                        tmp.push(inf + "-" + sup);
+                        break;
+                    }
+                    if(sup == 1 && dataset[i][j] == 1.0){
+                        tmp.push(intervalli[i][k]);
+                        break;
+                    }
+                }
+            }
+            datasetIntervalli.push(tmp);
+        }
+
+        var joinDistribution = {};
+
+        var result = [];
+        getAllCombinations(intervalli, 0, [], result);
+
+        for(var i = 0; i < result.length; i++){
+            var chiave = "";
+            for(var j = 0; j < result[0].length; j++){
+                chiave += result[i][j] + " || ";
+            }
+            joinDistribution[chiave] = 0;
+        }
+
+        for(var i = 0; i < datasetIntervalli[0].length; i++){
+            var chiave = ""; 
+            for(var j = 0; j < columns; j++){
+                chiave += datasetIntervalli[j][i] + " || ";
+            }
+            joinDistribution[chiave] += 1;                
+        }
+
+        var existingRow = document.getElementById("rowJoin");
+        if (existingRow) {
+            existingRow.parentNode.removeChild(existingRow);
+        }
+
+        var table = document.getElementById("tableJoin");
+
+        var rowJ = table.insertRow();
+        rowJ.id = "rowJoin";
+        var cell0 = rowJ.insertCell(0);
+        cell0.textContent = "Key";
+        var cell1 = rowJ.insertCell(1);
+        cell1.textContent = "Value";
+        for(var chiave in joinDistribution){
+            var rowJ1 = table.insertRow();
+            rowJ1.id = "rowJoin";
+            var cell2 = rowJ1.insertCell(0);
+            cell2.textContent = chiave;
+            var cell3 = rowJ1.insertCell(1);
+            cell3.textContent = joinDistribution[chiave];
+        };
+    }
+</script>
+</body>
+</html>

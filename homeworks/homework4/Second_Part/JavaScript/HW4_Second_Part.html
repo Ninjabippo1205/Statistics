@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        td, th {
+            border: 3px solid yellowgreen;
+        }
+    </style>
+    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+</head>
+<body style="background-color: black; color: white; text-align: center;">
+    <table id="ris2" style="width: 100%; height: 200px; text-align: center;">
+        <form onsubmit="return addIntervals2()">
+            <tr>
+                <td colspan="3">
+                    Quantitative discrete, Quantitative continuous and Qualitative variables
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Choose the intervals</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+    <table id="tableBody2" style="width: 100%; height: 200px; text-align: center;">
+    </table>
+    
+
+<script>
+
+function addIntervals2(){
+        event.preventDefault();
+
+        var elementsToRemove = document.querySelectorAll('tableRis2');
+        elementsToRemove.forEach(function (element) {
+            element.remove();
+        });
+        var elementsToRemove2 = document.querySelectorAll('tableRis3');
+        elementsToRemove2.forEach(function (element) {
+            element.remove();
+        });
+
+        const a = fetch('https://raw.githubusercontent.com/Ninjabippo1205/Statistics/main/homeworks/homework2/Dataset.csv')
+        .then((response) => {
+            return response.text();
+        })
+        .then((csvData) => {
+            const righe = csvData.split('\n');
+            var dataset = [];
+            var headers = [];
+
+            for(var i = 0; i < righe[0].split(",").length; i++){
+                headers.push(righe[0].split(",")[i]);
+            }
+
+            var table2 = document.getElementById("tableBody2");
+            table2.innerHTML = ""; // Pulisce la tabella precedente
+            
+            for(var i = 0; i < headers.length; i++){
+                if(!isNaN(righe[1].split(",")[i])){
+                    let row = table2.insertRow();
+                    let cell = row.insertCell(0);
+                    cell.textContent = "Chose the interlavs number for variabile " + headers[i] + "\t\t";
+                    let input = document.createElement("input");
+                    input.id = headers[i];
+                    input.type = "text";
+                    input.value = i+4; //Da togliere
+                    cell.appendChild(input);
+                }
+            }
+
+            var existingButton = document.getElementById("calculateButton");
+            if (existingButton) {
+                existingButton.parentNode.removeChild(existingButton);
+            }
+            var submitButton = document.createElement("input");
+            submitButton.id = "calculateButton2";
+            submitButton.type = "submit";
+            submitButton.value = "Calcola";
+            submitButton.onclick = calcola2;
+
+            var form = document.createElement("form");
+            form.id = "intervalForm";
+            form.appendChild(submitButton);
+            document.body.appendChild(form);
+            var rowF = table2.insertRow();
+            rowF.id="rowF";
+            var cellF = rowF.insertCell();
+            cellF.appendChild(form);
+        });
+    }
+
+    function ordineAlfabeticoCrescente(arr, key) {
+        arr.sort(function(a, b) {
+            return a[key].localeCompare(b[key]);
+        });
+    }
+
+    function ordineAlfabeticoDecrescente(arr, key) {
+        arr.sort(function(a, b) {
+            return b[key].localeCompare(a[key]);
+        });
+    }
+
+    function ordineNumericoCrescente(arr, key) {
+        arr.sort(function(a, b) {
+            return parseFloat(a[key]) - parseFloat(b[key]);
+        });
+    }
+
+    function ordineNumericoDecrescente(arr, key) {
+        arr.sort(function(a, b) {
+            return parseFloat(b[key]) - parseFloat(a[key]);
+        });
+    }
+
+    function trovaValoreMassimo(arr, key) {
+        let massimo = Number.NEGATIVE_INFINITY; // Inizializza con il valore minimo possibile
+        for (let i = 0; i < arr.length; i++) {
+            const valore = parseFloat(arr[i][key]);
+            if (!isNaN(valore) && valore > massimo) {
+                massimo = valore;
+            }
+        }
+        return massimo;
+    }
+
+    function trovaValoreMinimo(arr, key) {
+        let minimo = Number.POSITIVE_INFINITY; // Inizializza con il valore massimo possibile
+        for (let i = 0; i < arr.length; i++) {
+            const valore = parseFloat(arr[i][key]);
+            if (!isNaN(valore) && valore < minimo) {
+                minimo = valore;
+            }
+        }
+        return minimo;
+    }
+
+
+
+    function calcola2(){
+        event.preventDefault();
+        var elementsToRemove = document.querySelectorAll('tableRis2');
+        elementsToRemove.forEach(function (element) {
+            element.remove();
+        });
+        var elementsToRemove2 = document.querySelectorAll('tableRis3');
+        elementsToRemove2.forEach(function (element) {
+            element.remove();
+        });
+        
+        const a = fetch('https://raw.githubusercontent.com/Ninjabippo1205/Statistics/main/homeworks/homework2/Dataset.csv')
+        .then((response) => {
+            return response.text();
+        })
+        .then((csvData) => {
+            const righe = csvData.split('\n');
+            var dataset = [];
+            var headers = [];
+
+            for(var i = 0; i < righe[0].split(",").length; i++){
+                headers.push(righe[0].split(",")[i]);
+            }
+
+            var intervals ={};
+            for(var i = 0; i < headers.length; i++){
+                var int = document.getElementById(headers[i]);
+                if(int){
+                    intervals[i] = int.value;
+                }
+            }
+
+
+            for(var i = 1; i < righe.length; i++){
+                var riga = {};
+                for(var j = 0; j < headers.length; j++){
+                    riga[headers[j]] = righe[i].split(",")[j];
+                }
+                dataset.push(riga);
+            }
+
+
+            var intervalli = {};
+            for(var chiave in intervals){
+                var tmp = [];
+
+                var max = trovaValoreMassimo(dataset, headers[chiave]);
+                var min = trovaValoreMinimo(dataset, headers[chiave]);
+
+                for(var j = min; j < max; j += ((max-min)/intervals[chiave])){
+                    var inizio = j;
+                    var fine = (inizio+((max-min)/intervals[chiave]));
+                    var int = inizio + "-" + fine;
+                    tmp.push(int);
+                }
+                intervalli[chiave] = tmp;
+            }
+
+            var intervalsDataset = [];
+
+            for(var chiave in intervalli){
+                var tmp = [];
+                var max = trovaValoreMassimo(dataset, headers[chiave]);
+                var min = trovaValoreMinimo(dataset, headers[chiave]);
+                for(var i = 0; i < righe.length-1; i++){
+                    for(var j = 0; j < intervalli[chiave].length; j++){
+                        var int = intervalli[chiave][j].split("-");
+                        let inf = parseFloat(int[0]);
+                        let sup = parseFloat(int[1]);
+                        var valure = dataset[i][headers[chiave]]
+                        if(valure >= inf && valure < sup ){
+                            tmp.push(inf + "-" + sup);
+                            break;
+                        }
+                        if(sup == max && valure == max){
+                            tmp.push(intervalli[chiave][j]);
+                            break;
+                        }
+                        
+                    }
+                }
+                
+                intervalsDataset.push(tmp);
+            }
+
+            var nonIntervals = [];
+            for(var i = 0; i < headers.length; i++){
+                if(isNaN(righe[1].split(",")[i])){
+                    nonIntervals.push(i);
+                }
+            }
+
+            countDataset = [];
+            for(var i = 0; i < nonIntervals.length; i++){
+                var tmp = {};
+                for(var j = 1; j < righe.length-1; j++){     
+                    if(tmp[dataset[j][headers[nonIntervals[i]]]]){
+                        tmp[dataset[j][headers[nonIntervals[i]]]] += 1;
+                    }else{
+                        tmp[dataset[j][headers[nonIntervals[i]]]] = 1;
+                    }
+                }
+                countDataset.push(tmp);
+            }
+
+            total_statistical_units = dataset.length;
+
+            //inizio tabella
+            var table = document.createElement('tableRis2');
+            table.style.marginLeft = "10px";
+            table.style.marginRight = "10px";
+            table.style.marginTop = "10px";
+            table.style.marginBottom = "10px";
+
+            var caption = document.createElement('caption');
+            caption.textContent = 'Quantitative discrete variable (Enterpreneurial attitude)';
+            table.appendChild(caption);
+            var headerRow = document.createElement('tr');
+
+            var headerCells = [
+                'Variable',
+                'Absolute frequence',
+                'Relative frequence',
+                'Percentage'
+            ];
+
+            headerCells.forEach(function (text) {
+                var th = document.createElement('th');
+                th.textContent = text;
+                headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            var int1 = {};
+            for(var i = 0; i < intervalsDataset[0].length; i++){
+                if(int1[intervalsDataset[0][i]]){
+                    int1[intervalsDataset[0][i]] += 1;
+                }else{
+                    int1[intervalsDataset[0][i]] = 1;
+                }
+            }
+
+            for(var i = 0; i < intervalli[0].length; i++){
+                if(!int1[intervalli[0][i]]){
+                    int1[intervalli[0][i]] = 0;
+                }
+            }
+
+            var intervalloOrdinato1 = Object.keys(int1);
+            intervalloOrdinato1.sort();
+
+            for(var i = 0; i < intervalloOrdinato1.length; i++){
+                var tr2 = document.createElement('tr');
+                var td2 = document.createElement('td');
+                td2.textContent = intervalloOrdinato1[i];
+                var td3 = document.createElement('td');
+                td3.textContent = int1[intervalloOrdinato1[i]];
+                var td4 = document.createElement('td');
+                td4.textContent = int1[intervalloOrdinato1[i]]/total_statistical_units;
+                var td5 = document.createElement('td');
+                td5.textContent = (int1[intervalloOrdinato1[i]]/total_statistical_units)*100;
+                tr2.appendChild(td2)
+                tr2.appendChild(td3)
+                tr2.appendChild(td4)
+                tr2.appendChild(td5)
+                table.appendChild(tr2)
+            }
+
+            document.body.appendChild(table);
+            //fine tabella
+
+            //inizio tabella
+            var table2 = document.createElement('tableRis3');
+            table2.style.marginLeft = "10px";
+            table2.style.marginRight = "10px";
+            table2.style.marginTop = "10px";
+            table2.style.marginBottom = "10px";
+
+            var caption = document.createElement('caption');
+            caption.textContent = 'Quantitative continuous variable (Weight)';
+            table2.appendChild(caption);
+
+            var headerRow = document.createElement('tr');
+
+            var headerCells = [
+                'Variable',
+                'Absolute frequence',
+                'Relative frequence',
+                'Percentage'
+            ];
+
+            headerCells.forEach(function (text) {
+                var th = document.createElement('th');
+                th.textContent = text;
+                headerRow.appendChild(th);
+            });
+            table2.appendChild(headerRow);
+
+            var int2 = {};
+            for(var i = 0; i < intervalsDataset[0].length; i++){
+                if(int2[intervalsDataset[1][i]]){
+                    int2[intervalsDataset[1][i]] += 1;
+                }else{
+                    int2[intervalsDataset[1][i]] = 1;
+                }
+            }
+
+            for(var i = 0; i < intervalli[1].length; i++){
+                if(!int2[intervalli[1][i]]){
+                    int1[intervalli[1][i]] = 0;
+                }
+            }
+
+            var intervalloOrdinato2 = Object.keys(int2);
+            intervalloOrdinato2.sort();
+
+            for(var i = 0; i < intervalloOrdinato2.length; i++){
+                var tr2 = document.createElement('tr');
+                var td2 = document.createElement('td');
+                td2.textContent = intervalloOrdinato2[i];
+                var td3 = document.createElement('td');
+                td3.textContent = int2[intervalloOrdinato2[i]];
+                var td4 = document.createElement('td');
+                td4.textContent = int2[intervalloOrdinato2[i]]/total_statistical_units;
+                var td5 = document.createElement('td');
+                td5.textContent = (int2[intervalloOrdinato2[i]]/total_statistical_units)*100;
+                tr2.appendChild(td2)
+                tr2.appendChild(td3)
+                tr2.appendChild(td4)
+                tr2.appendChild(td5)
+                table2.appendChild(tr2)
+            }
+
+            document.body.appendChild(table2);
+            //fine tabella
+
+            //inizio tabella
+            var table3 = document.createElement('tableRis3');
+            table3.style.marginLeft = "10px";
+            table3.style.marginRight = "10px";
+            table3.style.marginTop = "10px";
+            table3.style.marginBottom = "10px";
+
+            var intervalloOrdinato3 = Object.keys(countDataset[0]);
+            intervalloOrdinato3.sort((a, b) => a.localeCompare(b));
+            
+
+            var caption = document.createElement('caption');
+            caption.textContent = 'Qualitative variable (Hobbies)';
+            table3.appendChild(caption);
+
+            var headerRow = document.createElement('tr');
+
+            var headerCells = [
+                'Variable',
+                'Absolute frequence',
+                'Relative frequence',
+                'Percentage'
+            ];
+
+            headerCells.forEach(function (text) {
+                var th = document.createElement('th');
+                th.textContent = text;
+                headerRow.appendChild(th);
+            });
+            table3.appendChild(headerRow);
+
+            for(var i = 0; i < intervalloOrdinato3.length; i++){
+                var tr2 = document.createElement('tr');
+                var td2 = document.createElement('td');
+                td2.textContent = intervalloOrdinato3[i];
+                var td3 = document.createElement('td');
+                td3.textContent = countDataset[0][intervalloOrdinato3[i]];
+                var td4 = document.createElement('td');
+                td4.textContent =countDataset[0][intervalloOrdinato3[i]]/total_statistical_units;
+                var td5 = document.createElement('td');
+                td5.textContent = (countDataset[0][intervalloOrdinato3[i]]/total_statistical_units)*100;
+                tr2.appendChild(td2)
+                tr2.appendChild(td3)
+                tr2.appendChild(td4)
+                tr2.appendChild(td5)
+                table3.appendChild(tr2)
+            }
+
+            document.body.appendChild(table3);
+            //fine tabella
+        })
+    }
+</script>
+</body>
+</html>

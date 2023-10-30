@@ -1,0 +1,32 @@
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.exe
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.deps.json
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.runtimeconfig.json
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.dll
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.pdb
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.Form1.resources
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.csproj.GenerateResource.cache
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.AssemblyInfoInputs.cache
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.AssemblyInfo.cs
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.csproj.CoreCompileInputs.cache
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.dll
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\refint\HW4_Second_Part.dll
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.pdb
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.genruntimeconfig.cache
+C:\Users\filip\OneDrive\Desktop\HW4_Second_Part\obj\Debug\net8.0-windows\ref\HW4_Second_Part.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.exe
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.deps.json
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.runtimeconfig.json
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\bin\Debug\net8.0-windows\HW4_Second_Part.pdb
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.Form1.resources
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.csproj.GenerateResource.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.AssemblyInfoInputs.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.AssemblyInfo.cs
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.csproj.CoreCompileInputs.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\refint\HW4_Second_Part.dll
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.pdb
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\HW4_Second_Part.genruntimeconfig.cache
+C:\Users\filip\OneDrive\Desktop\Statistics\Homework 4\Second_Part\C#\HW4_Second_Part\obj\Debug\net8.0-windows\ref\HW4_Second_Part.dll
