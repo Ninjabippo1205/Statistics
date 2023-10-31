@@ -200,7 +200,7 @@
 
                 <div class="col">
                     <video controls width="100%" height="75%">
-                        <source src="github.com/Ninjabippo1205/Statistics/raw/main/videos/HW4/HW4_First_Part.mp4" type="video/mp4">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW4/HW4_First_Part.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -228,7 +228,7 @@
 
                 <div class="col">
                     <video controls width="100%" height="75%">
-                        <source src="github.com/Ninjabippo1205/Statistics/raw/main/videos/HW4/HW4_Second_Part.mp4" type="video/mp4">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW4/HW4_Second_Part.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
