@@ -204,10 +204,10 @@
                     </video>
                 </div>
             </div>
-            <div class="r2c3HW3">
+            <div class="r2c3HW4">
                 JavaScript
             </div>
-            <div class="r2c5HW3">      
+            <div class="r2c5HW4">      
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework4/First_Part/JavaScript/HW4_First_Part.html'> link </a>
 
                 <br>
@@ -232,10 +232,10 @@
                     </video>
                 </div>
             </div>
-            <div class="r3c3HW3">
+            <div class="r3c3HW4">
                 JavaScript
             </div>
-            <div class="r3c5HW3">      
+            <div class="r3c5HW4">      
                 The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework4/Second_Part/JavaScript/HW4_Second_Part.html'> link </a>
 
                 <br>
