@@ -222,7 +222,7 @@
                 C#
             </div>
             <div class="r3c4HW4">      
-                The C# code can be found by clicking the <a href=''>link</a>
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework4/Second_Part/C%23/HW4_Second_Part/Form1.cs'>link</a>
 
                 <br>
 
@@ -246,7 +246,7 @@
                 Theory
             </div>
             <div class="r4c2HW4">                
-                The answers of the homework 4 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Central Limit Theorem CLT.pdf'>page1</a> and <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Law of large numbers LLN.pdf'>page2</a>
+                The answers of the homework 4 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Central Limit Theorem CLT.pdf'>Central Limit Theorem CLT page</a> and <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Law of large numbers LLN.pdf'>Law of large numbers LLN page</a>
             </div>
         </div>
     </body>
