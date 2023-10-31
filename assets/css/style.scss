@@ -66,7 +66,7 @@
     grid-area: ff;
     color: white;
 }
-
+////////////////////////////////////////
 .gridHomework2{
     display: grid;
     grid-template:
@@ -155,7 +155,7 @@
     grid-area: q;
     color: white;
 }
-
+/////////////////////////////////////
 .gridHomework3{
     display: grid;
     grid-template:
@@ -206,5 +206,82 @@
 }
 .r3c2HW3{
     grid-area: hhh;
+    color: white;
+}
+/////////////////////////////////
+
+.gridHomework4{
+    display: grid;
+    grid-template:
+      'aaaa bbbb cccc eeee'
+      'aaaa bbbb dddd ffff'
+      'aaaa gggg hhhh iiii'
+      'aaaa gggg jjjj kkkk'
+      'aaaa llll mmmm mmmm'/110px 180px 110px 1fr;
+    width: 100%;
+}
+
+.gridHomework4 > div{
+    align-self: center;
+    text-align: center;
+    border: 3px solid yellowgreen;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+
+.r1HW4{
+    grid-area: aaaa;
+    color: white;
+}
+.r2c1HW4{
+    grid-area: bbbb;
+    color: white;
+}
+.r2c2HW4{
+    grid-area: cccc;
+    color: white;
+}
+.r2c3HW4{
+    grid-area: dddd;
+    color: white;
+}
+.r2c4HW4{
+    grid-area: eeee;
+    color: white;
+}
+.r2c5HW4{
+    grid-area: ffff;
+    color: white;
+}
+
+.r3c1HW4{
+    grid-area: gggg;
+    color: white;
+}
+.r3c2HW4{
+    grid-area: hhhh;
+    color: white;
+}
+.r3c3HW4{
+    grid-area: jjjj;
+    color: white;
+}
+.r3c4HW4{
+    grid-area: iiii;
+    color: white;
+}
+.r3c5HW4{
+    grid-area: kkkk;
+    color: white;
+}
+.r4c1HW4{
+    grid-area: llll;
+    color: white;
+}
+.r4c2HW4{
+    grid-area: mmmm;
     color: white;
 }

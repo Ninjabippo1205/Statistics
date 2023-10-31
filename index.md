@@ -181,5 +181,73 @@
                 The answers to exercise 2 can be found on this <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework3/Second_Part/HW3.pdf'>page</a>
             </div>
         </div>
+
+        <div class="gridHomework4">
+            <div class="r1HW4">
+                Homework 4
+            </div>
+            
+            <div class="r2c1HW4">
+                First part
+            </div>
+            <div class="r2c2HW4">                
+                C#
+            </div>
+            <div class="r2c4HW4">      
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework4/First_Part/C%23/HW4_First_Part/Form1.cs'>link</a>
+
+                <br>
+
+                <div class="col">
+                    <video controls width="100%" height="75%">
+                        <source src="github.com/Ninjabippo1205/Statistics/raw/main/videos/HW4/HW4_First_Part.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="r2c3HW3">
+                JavaScript
+            </div>
+            <div class="r2c5HW3">      
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework4/First_Part/JavaScript/HW4_First_Part.html'> link </a>
+
+                <br>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework4/First_Part/JavaScript/HW4_First_Part.html">link</a>
+            </div>
+            
+            <div class="r3c1HW4">
+                Second part
+            </div>
+            <div class="r3c2HW4">                
+                C#
+            </div>
+            <div class="r3c4HW4">      
+                The C# code can be found by clicking the <a href=''>link</a>
+
+                <br>
+
+                <div class="col">
+                    <video controls width="100%" height="75%">
+                        <source src="github.com/Ninjabippo1205/Statistics/raw/main/videos/HW4/HW4_Second_Part.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="r3c3HW3">
+                JavaScript
+            </div>
+            <div class="r3c5HW3">      
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework4/Second_Part/JavaScript/HW4_Second_Part.html'> link </a>
+
+                <br>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework4/Second_Part/JavaScript/HW4_Second_Part.html">link</a>
+            </div>
+            <div class="r4c1HW4">
+                Theory
+            </div>
+            <div class="r4c2HW4">                
+                The answers of the homework 4 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Central Limit Theorem CLT.pdf'>page1</a> and <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Law of large numbers LLN.pdf'>page2</a>
+            </div>
+        </div>
     </body>
 </html>
