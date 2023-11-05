@@ -246,7 +246,7 @@
                 Theory
             </div>
             <div class="r4c2HW4">                
-                The answers of the homework 4 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Central Limit Theorem CLT.pdf'>Central Limit Theorem CLT page</a> and <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Law of large numbers LLN.pdf'>Law of large numbers LLN page</a>
+                The answers of the homework 4 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH2_%20Central%20Limit%20Theorem%20CLT.pdf'>Central Limit Theorem CLT page</a> and <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH1_%20Law%20of%20large%20numbers%20LLN.pdf'>Law of large numbers LLN page</a>
             </div>
         </div>
 
@@ -259,7 +259,7 @@
                 C#
             </div>
             <div class="r2c2HW5">                
-                The C# code can be found by clicking the <a href=''>link</a>
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework5/C%23/HW5_C/Attack.cs'>link1</a> and <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework5/C%23/HW5_C/AttackForm.cs'>link2</a>
 
                 <br>
 
@@ -274,17 +274,17 @@
                 JavaScript
             </div>
             <div class="r3c2HW5">                
-                The JavaScript code can be found by clicking the <a href=''> link </a>
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework5/JavaScript/HW5_JS.html'> link </a>
 
                 <br>
 
-                The resulting web page can be visited by clicking this <a href="">link</a>
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework5/JavaScript/HW5_JS.html">link</a>
             </div>
             <div class="r4c1HW5">
                 Theory
             </div>
             <div class="r4c2HW5">                
-                The answers of the homework 5 can be found on <a href=''>Poisson point process page</a>
+                The answers of the homework 5 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH9_%20Poisson%20point%20process.pdf'>Poisson point process page</a>
             </div>
         </div>
     </body>
