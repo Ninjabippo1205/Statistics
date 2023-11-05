@@ -285,3 +285,61 @@
     grid-area: mmmm;
     color: white;
 }
+////////////////////////////////////////////////////
+
+.gridHomework5{
+    display: grid;
+    grid-template:
+      'ab bc cd'
+      'ab gh hi'
+      'ab lm mn'/110px 180px 110px 1fr;
+    width: 100%;
+}
+
+.gridHomework5 > div{
+    align-self: center;
+    text-align: center;
+    border: 3px solid yellowgreen;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+
+.r1HW5{
+    grid-area: ab;
+    color: white;
+}
+.r2c1HW5{
+    grid-area: bc;
+    color: white;
+}
+.r2c2HW5{
+    grid-area: cd;
+    color: white;
+}
+.r2c4HW5{
+    grid-area: ef;
+    color: white;
+}
+.r3c1HW5{
+    grid-area: gh;
+    color: white;
+}
+.r3c2HW5{
+    grid-area: hi;
+    color: white;
+}
+.r3c4HW5{
+    grid-area: ij;
+    color: white;
+}
+.r4c1HW5{
+    grid-area: lm;
+    color: white;
+}
+.r4c2HW5{
+    grid-area: mn;
+    color: white;
+}

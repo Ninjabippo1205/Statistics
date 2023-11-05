@@ -249,5 +249,43 @@
                 The answers of the homework 4 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Central Limit Theorem CLT.pdf'>Central Limit Theorem CLT page</a> and <a href='https://github.com/Ninjabippo1205/Statistics/tree/main/thesis/Law of large numbers LLN.pdf'>Law of large numbers LLN page</a>
             </div>
         </div>
+
+        <div class="gridHomework5">
+            <div class="r1HW5">
+                Homework 5
+            </div>
+            
+            <div class="r2c1HW5">
+                C#
+            </div>
+            <div class="r2c2HW5">                
+                The C# code can be found by clicking the <a href=''>link</a>
+
+                <br>
+
+                <div class="col">
+                    <video controls width="100%" height="75%">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW5/HW5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+            <div class="r3c1HW5">
+                JavaScript
+            </div>
+            <div class="r3c2HW5">                
+                The JavaScript code can be found by clicking the <a href=''> link </a>
+
+                <br>
+
+                The resulting web page can be visited by clicking this <a href="">link</a>
+            </div>
+            <div class="r4c1HW5">
+                Theory
+            </div>
+            <div class="r4c2HW5">                
+                The answers of the homework 5 can be found on <a href=''>Poisson point process page</a>
+            </div>
+        </div>
     </body>
 </html>
