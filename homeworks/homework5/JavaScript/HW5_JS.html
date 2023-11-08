@@ -93,10 +93,10 @@
             this.drawAxes();
             drawChart(this);
             drawRectanglePerimeter(this);
-            histogramData(A);
-            drawHistogram(this,A);
-            histogramData(N);
-            drawHistogram(this, N);
+            //histogramData(A);
+            drawHistogram(this,A, dataForHistogram, labelsForHistogram);
+            //histogramData(N);
+            drawHistogram(this, N, dataForHistogramFine, labelsForHistogramFine);
         }
 
         drawGrid() {
@@ -116,22 +116,32 @@
                     let xGrigliaSx = this.gridXini + this.offsetViewX;
                     let xGrigliaDx = this.gridXfin + this.offsetViewX;
 
-                    ctx.beginPath();
-                    ctx.moveTo(xGrigliaSx, y);
-                    ctx.lineTo(xGrigliaDx, y);
-                    ctx.strokeStyle = 'white';
-                    ctx.stroke();
+                    let ris = drawInsideRectangle(this, xGrigliaSx, y, xGrigliaDx, y);
+                    if(ris != null){
+                        ctx.beginPath();
+                        //ctx.moveTo(xGrigliaSx, y);
+                        //ctx.lineTo(xGrigliaDx, y);
+                        ctx.moveTo(ris[0], ris[1]);
+                        ctx.lineTo(ris[2], ris[3]);
+                        ctx.strokeStyle = 'white';
+                        ctx.stroke();
+                    }
                 }
             }else{
                 for (let y = this.gridYfin + this.offsetViewY; y <= this.gridYini + this.offsetViewY; y += dimRows) {
                     let xGrigliaSx = this.gridXini + this.offsetViewX;
                     let xGrigliaDx = this.gridXfin + this.offsetViewX;
 
-                    ctx.beginPath();
-                    ctx.moveTo(xGrigliaSx, y);
-                    ctx.lineTo(xGrigliaDx, y);
-                    ctx.strokeStyle = 'white';
-                    ctx.stroke();
+                    let ris = drawInsideRectangle(this, xGrigliaSx, y, xGrigliaDx, y);
+                    if(ris != null){
+                        ctx.beginPath();
+                        //ctx.moveTo(xGrigliaSx, y);
+                        //ctx.lineTo(xGrigliaDx, y);
+                        ctx.moveTo(ris[0], ris[1]);
+                        ctx.lineTo(ris[2], ris[3]);
+                        ctx.strokeStyle = 'white';
+                        ctx.stroke();
+                    }
                 }
             }
 
@@ -140,29 +150,37 @@
                     let yGrigliaSopra = this.gridYini + this.offsetViewY;
                     let yGrigliaSotto = this.gridYfin + this.offsetViewY;
 
-                    ctx.beginPath();
-                    ctx.moveTo(x, yGrigliaSopra);
-                    ctx.lineTo(x, yGrigliaSotto);
-                    ctx.strokeStyle = 'white';
-                    ctx.stroke();
+                    let ris = drawInsideRectangle(this, x, yGrigliaSopra, x, yGrigliaSotto);
+                    if(ris != null){
+                        ctx.beginPath();
+                        //ctx.moveTo(x, yGrigliaSopra);
+                        //ctx.lineTo(x, yGrigliaSotto);
+                        ctx.moveTo(ris[0], ris[1]);
+                        ctx.lineTo(ris[2], ris[3]);
+                        ctx.strokeStyle = 'white';
+                        ctx.stroke();
+                    }
                 }
             }else{
                 for (let x = this.gridXfin + this.offsetViewX; x <= this.gridXini + this.offsetViewX; x += dimCols) {
                     let yGrigliaSopra = this.gridYini + this.offsetViewY;
                     let yGrigliaSotto = this.gridYfin + this.offsetViewY;
 
-                    ctx.beginPath();
-                    ctx.moveTo(x, yGrigliaSopra);
-                    ctx.lineTo(x, yGrigliaSotto);
-                    ctx.strokeStyle = 'white';
-                    ctx.stroke();
+                    let ris = drawInsideRectangle(this, x, yGrigliaSopra, x, yGrigliaSotto);
+                    if(ris != null){
+                        ctx.beginPath();
+                        //ctx.moveTo(x, yGrigliaSopra);
+                        //ctx.lineTo(x, yGrigliaSotto);
+                        ctx.moveTo(ris[0], ris[1]);
+                        ctx.lineTo(ris[2], ris[3]);
+                        ctx.strokeStyle = 'white';
+                        ctx.stroke();
+                    }
                 }
             }
             ctx.restore();
             
         }
-
-
 
         drawAxes() {
             ctx.strokeStyle = 'black';
@@ -179,11 +197,16 @@
             const endX = this.gridXfin + this.offsetViewX;
             const centerY = (this.gridYini + this.gridYfin) / 2 + this.offsetViewY;
 
-            // Disegna l'asse delle ascisse (orizzontale)
-            ctx.beginPath();
-            ctx.moveTo(startX, centerY);
-            ctx.lineTo(endX, centerY);
-            ctx.stroke();
+            let ris = drawInsideRectangle(this, startX, centerY, endX, centerY);
+            if(ris != null){
+                // Disegna l'asse delle ascisse (orizzontale)
+                ctx.beginPath();
+                //ctx.moveTo(startX, centerY);
+                //ctx.lineTo(endX, centerY);
+                ctx.moveTo(ris[0], ris[1]);
+                ctx.lineTo(ris[2], ris[3]);
+                ctx.stroke();
+            }
 
             ctx.restore(); // Ripristina il contesto canvas precedente (rimuove il percorso di clip)
             
@@ -196,17 +219,22 @@
             const endY = this.gridYfin + this.offsetViewY;
             const originX = this.gridXini + this.offsetViewX;
 
+            ris = drawInsideRectangle(this, originX, startY, originX, endY);
+            if(ris != null){
             // Disegna l'asse delle ordinate (verticale)
             ctx.beginPath();
-            ctx.moveTo(originX, startY);
-            ctx.lineTo(originX, endY);
+            //ctx.moveTo(originX, startY);
+            //ctx.lineTo(originX, endY);
+            ctx.moveTo(ris[0], ris[1]);
+            ctx.lineTo(ris[2], ris[3]);
             ctx.stroke();
+            }
 
             ctx.restore();
         }
 
         zoom(scale) {
-            let fattoreScala = 32;
+            let fattoreScala = (this.gridXfin-this.gridXini)/(this.gridYfin - this.gridYini) * N;
             if(this.gridXini - fattoreScala*scale < this.gridXfin + fattoreScala*scale){
                 this.gridXini -= fattoreScala*scale
                 this.gridXfin += fattoreScala*scale
@@ -246,21 +274,18 @@
     var Lambda = 0;
     var A = 0;
     var P = 0;
-    var dataCollector= [];
+    var dataCollector = [];
+    var drawDataset = [];
     let colori = [];
 
     var intervalsNumber = 20;
     var count={};
     var count3={};
     var count4={};
-    var dataForHistogram = Object.values(count);
-    var labelsForHistogram = Object.keys(count);
-
-    var dataForHistogram3 = Object.values(count3);
-    var labelsForHistogram3 = Object.keys(count3);
-
-    var dataForHistogram4 = Object.values(count4);
-    var labelsForHistogram4 = Object.keys(count4);
+    var dataForHistogram;
+    var labelsForHistogram;
+    var dataForHistogramFine;
+    var labelsForHistogramFine;
         
     const rect2 = new Rect(80, 30, 800, 400, 2);
 
@@ -276,8 +301,6 @@
     function histogramData(pos){
         "use strict";
         count={};
-        count3={};
-        count4={};
         var errore = 0;
         for(var m = 0; m < M; m++){
             for(var c=0; c<(N); c++){
@@ -301,52 +324,17 @@
                         }
                     }
                 }
-                if(dataCollector[m][2][pos-1]>=inizio && dataCollector[m][2][pos-1]<fine){
-                    if (count3[key]) {
-                        count3[key] += 1;
-                    } else {
-                        count3[key] = 1;
-                    }
-                }else if(dataCollector[m][2][pos-1] == fine){
-                    if(pos == N){
-                        if(dataCollector[m][2][pos-1] == pos){
-                            if (count3[`${fine}-${fine+1}`]) {
-                                count3[`${fine}-${fine+1}`] += 1;
-                            } else {
-                                count3[`${fine}-${fine+1}`] = 1;
-                            }
-                        }
-                    }
-                }
-                if(dataCollector[m][3][pos-1]>=inizio && dataCollector[m][3][pos-1]<fine){
-                    if (count4[key]) {
-                        count4[key] += 1;
-                    } else {
-                        count4[key] = 1;
-                    }
-                }else if(dataCollector[m][3][pos-1] == fine){
-                    if(pos == N){
-                        if(dataCollector[m][3][pos-1] == pos){
-                            if (count4[`${fine}-${fine+1}`]) {
-                                count4[`${fine}-${fine+1}`] += 1;
-                            } else {
-                                count4[`${fine}-${fine+1}`] = 1;
-                            }
-                        }
-                    }
-                }
             }          
-        } 
-        dataForHistogram = Object.values(count);
-        labelsForHistogram = Object.keys(count);
-
-        dataForHistogram3 = Object.values(count3);
-        labelsForHistogram3 = Object.keys(count3);
-
-        dataForHistogram4 = Object.values(count4);
-        labelsForHistogram4 = Object.keys(count4);      
+        }
+        if(pos != N){
+            dataForHistogram = Object.values(count);
+            labelsForHistogram = Object.keys(count);
+        }else{
+            dataForHistogramFine = Object.values(count);
+            labelsForHistogramFine = Object.keys(count);
+        }
     }
-
+    
     function collectData(){
         "use strict";
         N = parseInt(document.getElementById("numberN").value);
@@ -356,130 +344,349 @@
         A = parseInt(document.getElementById("numberA").value);
 
         dataCollector=[new Array(M).fill(0)];
+        drawDataset = [];
+        for(let i = 0; i < N; i++){
+            drawDataset[i] = [];
+        }
+        for(let i = 0; i < N; i++){
+            for(let i = 0; i < N; i++){
+                drawDataset[i].push(0);
+            }
+        }
 
-        for (var m = 0; m < M; m++) {
-            dataCollector[m]=[new Array(4).fill(0)];
-            var data = [];
+        for (let m = 0; m < M; m++) {
+            dataCollector[m]=[new Array(M).fill(0)];
             var data2 = [];
-            var data3 = [];
-            var data4 = [];
             var counter = new Array(N).fill(0);
 
-            for (var n = 0; n < N; n++) {
+            for (let n = 0; n < N; n++) {
                 const randomNumber = Math.random();
-                
-                var result = 0;
+            
                 var result2 = 0;
-                var result3 = 0;
-                var result4 = 0;
 
                 if(randomNumber <= P){
-                    result = -1;
                     result2 = 1;
-                    result3 = 1;
-                    result4 = 1;
                 }else{
-                    result = 1;
                     result2 = 0;
-                    result3 = 0;
-                    result4 = 0;
                 }
                     
                 if(n==0){
-                    data.push(result);
                     data2.push(result2);
-                    data3.push(result3);
-                    data4.push(result4);  
                 }else{
-                    data.push(data[n-1]+result);
                     data2.push(data2[n-1]+result2);
-                    data3.push((data3[n-1]+result3)/n);
-                    data4.push((data4[n-1]+result4)/Math.sqrt(n));
                 }
             }
-            dataCollector[m][0]=data;
             dataCollector[m][1]=data2;
-            dataCollector[m][2]=data3;
-            dataCollector[m][3]=data4;
         }
 
-        for (var m = 0; m < M; m++) {
+        for (let m = 0; m < M; m++) {
             var letters = '0123456789ABCDEF';
             var color = '#';
-            for (var i = 0; i < 6; i++) {
+            for (let i = 0; i < 6; i++) {
                 color += letters[Math.floor(Math.random() * 16)];
             }
             colori.push(color);
         }
+
+        histogramData(A);
+        histogramData(N);
+
         ctx.clearRect(0,0,canvas.width,canvas.height);
         drawRectangle(rect2);
     }
 
 ////////////////////
 
-    function drawHistogram(rect, pos){
+    function drawInsideRectangle(rect, x_ini, y_ini, x_fin, y_fin){
+        ris_x_ini = x_ini;
+        ris_y_ini = y_ini;
+        ris_x_fin = x_fin;
+        ris_y_fin = y_fin;
+        ris = null;
+        ///////disegno solo all'interno del rettangolo
+        if(rect.width >= 0){
+            if(rect.height >= 0){
+                if(x_ini < rect.x){
+                    ris_x_ini = rect.x;
+                }
+                if(x_fin > rect.w + rect.width){
+                    ris_x_fin = rect.x + rect.width;
+                }
+                if(y_ini < rect.y){
+                    ris_y_ini = rect.y;
+                }
+                if(y_fin > rect.y + rect.height){
+                    ris_y_fin = rect.y + rect.height;
+                }
+                ris = [ris_x_ini, ris_y_ini, ris_x_fin, ris_y_fin];
+                ///////devo controllare se quello che disegno inizia e finsica all'interno del rettangolo, sennò non lo disegno
+                if(x_ini < rect.x && x_fin < rect.x){
+                    ris = null;
+                }
+                if(x_ini > (rect.x + rect.width) && x_fin > (rect.x + rect.width)){
+                    ris = null;
+                }
+                if(y_ini < rect.y && y_fin < rect.y){
+                    ris = null;
+                }
+                if(y_ini > (rect.y + rect.height) && y_fin > (rect.y + rect.height)){
+                    ris = null;
+                }
+            }else{
+                if(x_ini < rect.x){
+                    ris_x_ini = rect.x;
+                }
+                if(x_fin > rect.w + rect.width){
+                    ris_x_fin = rect.x + rect.width;
+                }
+                if(y_ini > rect.y){
+                    ris_y_ini = rect.y;
+                }
+                if(y_fin < rect.y + rect.height){
+                    ris_y_fin = rect.y + rect.height;
+                }
+                ris = [ris_x_ini, ris_y_ini, ris_x_fin, ris_y_fin];
+                ///////devo controllare se quello che disegno inizia e finsica all'interno del rettangolo, sennò non lo disegno
+                if(x_ini < rect.x && x_fin < rect.x){
+                    ris = null;
+                }
+                if(x_ini > (rect.x + rect.width) && x_fin > (rect.x + rect.width)){
+                    ris = null;
+                }
+                if(y_ini > rect.y && y_fin > rect.y){
+                    ris = null;
+                }
+                if(y_ini < (rect.y + rect.height) && y_fin < (rect.y + rect.height)){
+                    ris = null;
+                }
+            }
+        }else{
+            if(rect.height >= 0){
+                if(x_ini > rect.x){
+                    ris_x_ini = rect.x;
+                }
+                if(x_fin < rect.w + rect.width){
+                    ris_x_fin = rect.x + rect.width;
+                }
+                if(y_ini < rect.y){
+                    ris_y_ini = rect.y;
+                }
+                if(y_fin > rect.y + rect.height){
+                    ris_y_fin = rect.y + rect.height;
+                }
+                ris = [ris_x_ini, ris_y_ini, ris_x_fin, ris_y_fin];
+                ///////devo controllare se quello che disegno inizia e finsica all'interno del rettangolo, sennò non lo disegno
+                if(x_ini > rect.x && x_fin > rect.x){
+                    ris = null;
+                }
+                if(x_ini < (rect.x + rect.width) && x_fin < (rect.x + rect.width)){
+                    ris = null;
+                }
+                if(y_ini < rect.y && y_fin < rect.y){
+                    ris = null;
+                }
+                if(y_ini > (rect.y + rect.height) && y_fin > (rect.y + rect.height)){
+                    ris = null;
+                }
+            }else{
+                if(x_ini > rect.x){
+                    ris_x_ini = rect.x;
+                }
+                if(x_fin < rect.w + rect.width){
+                    ris_x_fin = rect.x + rect.width;
+                }
+                if(y_ini > rect.y){
+                    ris_y_ini = rect.y;
+                }
+                if(y_fin < rect.y + rect.height){
+                    ris_y_fin = rect.y + rect.height;
+                }
+                ris = [ris_x_ini, ris_y_ini, ris_x_fin, ris_y_fin];
+                ///////devo controllare se quello che disegno inizia e finsica all'interno del rettangolo, sennò non lo disegno
+                if(x_ini > rect.x && x_fin > rect.x){
+                    ris = null;
+                }
+                if(x_ini < (rect.x + rect.width) && x_fin < (rect.x + rect.width)){
+                    ris = null;
+                }
+                if(y_ini > rect.y && y_fin > rect.y){
+                    ris = null;
+                }
+                if(y_ini < (rect.y + rect.height) && y_fin < (rect.y + rect.height)){
+                    ris = null;
+                }
+            }
+        }
+        return ris;
+    }
+
+    function drawHistogram(rect, pos, data, labels){
         "use strict";
         let factorX = (rect.gridXfin - rect.gridXini)/N;
         let factorY = ((rect.gridYfin - rect.gridYini)/2)/N;
-        var factorXHistogram = ((rect.gridXfin - rect.gridXini) / N);
-        var barHeight = ((rect.gridYfin - rect.gridYini) / N) / 6; //added to make the height change with the zoom
+        let factorXHistogram = ((rect.gridXfin - rect.gridXini) / N);
+        let barHeight = ((rect.gridYfin - rect.gridYini) / N) / 6; //added to make the height change with the zoom
         ctx.save();
         ctx.beginPath();
         ctx.rect(rect.x, rect.y, rect.width, rect.height);
         ctx.clip();
 
         if(rect.id == 2){
-            for (let i = 0; i < dataForHistogram.length; i++) {
-                var p = parseFloat((labelsForHistogram[i].split('-'))[0]);
-                const barWidth  = (dataForHistogram[i] ) * factorXHistogram;
+            for (let i = 0; i < data.length; i++) {
+                var p = parseFloat((labels[i].split('-'))[0]);
+                const barWidth  = (data[i] ) * factorXHistogram;
 
                 let x = (rect.gridXini + rect.offsetViewX) + (pos)*factorXHistogram;
                 let y = (rect.gridYini + rect.offsetViewY) + (rect.gridYfin - rect.gridYini)/2 - barHeight - p*factorY;
 
-                ctx.fillStyle = "rgba(0, 0, 255, 0.5)"; 
+                ctx.fillStyle = "rgba(0, 0, 255, 0.8)"; 
                 ctx.fillRect(x, y, barWidth, barHeight);
                 ctx.fillStyle = "black";
                 ctx.textAlign = "center";
-                ctx.fillText(dataForHistogram[i], x, y);
+                ctx.fillText(data[i], x, y);
                 ctx.stroke();
             } 
         } 
         ctx.restore();
     }
 
-    function drawChart(rect) {    
-        "use strict";   
+    function drawChart(rect) {  
+        "use strict";     
+        drawDataset = [];
+        for(let i = 0; i <= N; i += 0.5){
+            drawDataset[i] = [];
+            let arr = [];
+            for(let j = 0; j <= N; j += 0.5){
+                arr[j] = 0;
+            }
+            drawDataset[i] = arr;
+        }
+        for(let i = 0; i <= N; i += 0.5){
+            for(let j = 0; j <= N; j += 0.5){
+                drawDataset[i][j] = 0;
+            }
+        }
+
         let factorX = (rect.gridXfin - rect.gridXini)/N;
         let factorY = ((rect.gridYfin - rect.gridYini)/2)/N;
+        for (let n = 0; n < N; n++) {            
+            for(let m = 0; m < M; m++){
+                if(drawDataset[dataCollector[m][1][n]][n] == 0){
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.rect(rect.x, rect.y, rect.width, rect.height);
+                    ctx.clip();
+                    ctx.strokeStyle = colori[m];
+                    let a = rect.gridXini + rect.offsetViewX;   //x_ini
+                    let b = rect.gridYini + rect.offsetViewY;   //y_ini
+                    let c = rect.gridYfin - rect.gridYini;      //height
+                    if(n==0){
+                        if(rect.id==2){
+                            let ris = drawInsideRectangle(rect, n*factorX + a, b + c/2, (n+1)*factorX + a, -(dataCollector[m][1][n])*factorY + b + c/2);
+                            if(dataCollector[m][1][n] - dataCollector[m][1][n-1] > 0){    //la linea è salita
+                                let riga = dataCollector[m][1][n] - 0.5;
+                                let colonna = n - 0.5;
+                                drawDataset[riga][colonna] = 1;
+                            }
+                            if(dataCollector[m][1][n] - dataCollector[m][1][n-1] == 0){    //la linea non è né salita né scesa
+                                let riga = dataCollector[m][1][n];
+                                let colonna = n - 0.5;
+                                drawDataset[riga][colonna] = 1;
+                            }
+                            if(dataCollector[m][1][n] - dataCollector[m][1][n-1] < 0){    //la linea è scesa
+                                let riga = dataCollector[m][1][n] + 0.5;
+                                let colonna = n - 0.5;
+                                drawDataset[riga][colonna] = 1;
+                            }
 
-        for(var m = 0; m < M; m++){
-            ctx.save();
-            ctx.beginPath();
-            ctx.rect(rect.x, rect.y, rect.width, rect.height);
-            ctx.clip();
-            
-            ctx.strokeStyle = colori[m];
-            
-            for (var n = 0; n < N; n++) {
-                let a = rect.gridXini + rect.offsetViewX;
-                let b = rect.gridYini + rect.offsetViewY;
-                let c = rect.gridYfin - rect.gridYini;
-                if(n==0){
-                    if(rect.id==2){
-                        ctx.moveTo(n*factorX + a, b + c/2);
-                        ctx.lineTo((n+1)*factorX + a, -(dataCollector[m][1][n])*factorY + b + c/2);
-                        ctx.stroke();
+                            if(ris != null){
+                                ctx.moveTo(ris[0], ris[1]);
+                                ctx.lineTo(ris[2], ris[3]);
+                                ctx.stroke();
+                            }
+                        }
+                    }else{
+                        if(rect.id==2){
+                            let ris = drawInsideRectangle(rect, n*factorX + a, -(dataCollector[m][1][n-1])*factorY + b + c/2, (n+1)*factorX + a, -(dataCollector[m][1][n])*factorY + b + c/2);
+                            if(dataCollector[m][1][n] - dataCollector[m][1][n-1] > 0){    //la linea è salita
+                                let riga = dataCollector[m][1][n] - 0.5;
+                                let colonna = n - 0.5;
+                                drawDataset[riga][colonna] = 1;
+                            }
+                            if(dataCollector[m][1][n] - dataCollector[m][1][n-1] == 0){    //la linea non è né salita né scesa
+                                let riga = dataCollector[m][1][n];
+                                let colonna = n - 0.5;
+                                drawDataset[riga][colonna] = 1;
+                            }
+                            if(dataCollector[m][1][n] - dataCollector[m][1][n-1] < 0){    //la linea è scesa
+                                let riga = dataCollector[m][1][n] + 0.5;
+                                let colonna = n - 0.5;
+                                drawDataset[riga][colonna] = 1;
+                            }
+                            
+                            if(ris != null){
+                                ctx.moveTo(ris[0], ris[1]);
+                                ctx.lineTo(ris[2], ris[3]);
+                                ctx.stroke();
+                            }
+                        }
                     }
+                    drawDataset[dataCollector[m][1][n]][n] = 1;
+                    ctx.restore();
                 }else{
-                    if(rect.id==2){
-                        ctx.moveTo(n*factorX + a, -(dataCollector[m][1][n-1])*factorY + b + c/2);
-                        ctx.lineTo((n+1)*factorX + a, -(dataCollector[m][1][n])*factorY + b + c/2);
-                        ctx.stroke();
+                    
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.rect(rect.x, rect.y, rect.width, rect.height);
+                    ctx.clip();
+                    ctx.strokeStyle = colori[m];
+                    let a = rect.gridXini + rect.offsetViewX;   //x_ini
+                    let b = rect.gridYini + rect.offsetViewY;   //y_ini
+                    let c = rect.gridYfin - rect.gridYini;      //height
+                    if(rect.id==2){                        
+                        if(dataCollector[m][1][n] - dataCollector[m][1][n-1] > 0){    //la linea è salita
+                            let riga = dataCollector[m][1][n] - 0.5;
+                            let colonna = n - 0.5;
+                            if(drawDataset[riga][colonna] == 0){
+                                drawDataset[riga][colonna] = 1;
+                                let ris = drawInsideRectangle(rect, n*factorX + a, -(dataCollector[m][1][n-1])*factorY + b + c/2, (n+1)*factorX + a, -(dataCollector[m][1][n])*factorY + b + c/2);
+                                if(ris != null){
+                                    ctx.moveTo(ris[0], ris[1]);
+                                    ctx.lineTo(ris[2], ris[3]);
+                                    ctx.stroke();
+                                }
+                            }
+                        }
+                        if(dataCollector[m][1][n] - dataCollector[m][1][n-1] == 0){    //la linea non è né salita né scesa
+                            let riga = dataCollector[m][1][n];
+                            let colonna = n - 0.5;
+                            if(drawDataset[riga][colonna] == 0){
+                                drawDataset[riga][colonna] = 1;
+                                let ris = drawInsideRectangle(rect, n*factorX + a, -(dataCollector[m][1][n-1])*factorY + b + c/2, (n+1)*factorX + a, -(dataCollector[m][1][n])*factorY + b + c/2);
+                                if(ris != null){
+                                    ctx.moveTo(ris[0], ris[1]);
+                                    ctx.lineTo(ris[2], ris[3]);
+                                    ctx.stroke();
+                                }
+                            }
+                        }
+                        if(dataCollector[m][1][n] - dataCollector[m][1][n-1] < 0){    //la linea è scesa
+                            let riga = dataCollector[m][1][n] + 0.5;
+                            let colonna = n - 0.5;
+                            if(drawDataset[riga][colonna] == 0){
+                                drawDataset[riga][colonna] = 1;
+                                let ris = drawInsideRectangle(rect, n*factorX + a, -(dataCollector[m][1][n-1])*factorY + b + c/2, (n+1)*factorX + a, -(dataCollector[m][1][n])*factorY + b + c/2);
+                                if(ris != null){
+                                    ctx.moveTo(ris[0], ris[1]);
+                                    ctx.lineTo(ris[2], ris[3]);
+                                    ctx.stroke();
+                                }
+                            }
+                        }
                     }
+                    ctx.restore();
                 }
-                
             }
-            ctx.restore();
         }
     }
 
@@ -529,19 +736,20 @@
 
     function findSelectedObject(x, y) {
         "use strict";
+        let offset = 10;
         for (let i = objects.length - 1; i >= 0; i--) {
             const rect = objects[i];
             if(rect.width >= 0){
                 if(rect.height >= 0){
-                    if ( x >= rect.x && x <= rect.x + rect.width && y >= rect.y && y <= rect.y + rect.height ) return rect;
+                    if ( x >= rect.x && x <= rect.x + rect.width + offset && y >= rect.y && y <= rect.y + rect.height + offset ) return rect;
                 }else{
-                    if ( x >= rect.x && x <= rect.x + rect.width && y <= rect.y && y >= rect.y + rect.height ) return rect;
+                    if ( x >= rect.x && x <= rect.x + rect.width + offset && y <= rect.y && y >= rect.y + rect.height - offset ) return rect;
                 }
             }else{
                 if(rect.height >= 0){
-                    if ( x <= rect.x && x >= rect.x + rect.width && y >= rect.y && y <= rect.y + rect.height ) return rect;
+                    if ( x <= rect.x && x >= rect.x + rect.width - offset && y >= rect.y && y <= rect.y + rect.height + offset ) return rect;
                 }else{
-                    if ( x <= rect.x && x >= rect.x + rect.width && y <= rect.y && y >= rect.y + rect.height ) return rect;
+                    if ( x <= rect.x && x >= rect.x + rect.width - offset && y <= rect.y && y >= rect.y + rect.height - offset ) return rect;
                 }
             }
         }
@@ -670,7 +878,7 @@
         clearTimeout(timer);
         if (selectedRect) {
             zoomView(selectedRect, e.deltaY);
-            timer = setTimeout(function() {drawRectangle(selectedRect);}, 500);
+            timer = setTimeout(function() {drawRectangle(selectedRect);}, 300);
         }
         e.preventDefault();
     });
