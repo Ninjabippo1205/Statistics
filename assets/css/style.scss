@@ -319,10 +319,6 @@
     grid-area: cd;
     color: white;
 }
-.r2c4HW5{
-    grid-area: ef;
-    color: white;
-}
 .r3c1HW5{
     grid-area: gh;
     color: white;
@@ -331,15 +327,62 @@
     grid-area: hi;
     color: white;
 }
-.r3c4HW5{
-    grid-area: ij;
-    color: white;
-}
 .r4c1HW5{
     grid-area: lm;
     color: white;
 }
 .r4c2HW5{
     grid-area: mn;
+    color: white;
+}
+
+////////////////////////////////////////////77
+
+.gridHomework6{
+    display: grid;
+    grid-template:
+    'abb bcc cdd'
+    'abb ghh hii'
+    'abb lmm mnn'/110px 180px 1fr;
+    width: 100%;
+}
+
+.gridHomework6 > div{
+    align-self: center;
+    text-align: center;
+    border: 3px solid yellowgreen;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+
+.r1HW6{
+    grid-area: abb;
+    color: white;
+}
+.r2c1HW6{
+    grid-area: bcc;
+    color: white;
+}
+.r2c2HW6{
+    grid-area: cdd;
+    color: white;
+}
+.r3c1HW6{
+    grid-area: ghh;
+    color: white;
+}
+.r3c2HW6{
+    grid-area: hii;
+    color: white;
+}
+.r4c1HW6{
+    grid-area: lmm;
+    color: white;
+}
+.r4c2HW6{
+    grid-area: mnn;
     color: white;
 }

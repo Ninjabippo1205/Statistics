@@ -287,5 +287,43 @@
                 The answers of the homework 5 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH9_%20Poisson%20point%20process.pdf'>Poisson point process page</a>
             </div>
         </div>
+
+        <div class="gridHomework6">
+            <div class="r1HW6">
+                Homework 6
+            </div>
+            
+            <div class="r2c1HW6">
+                C#
+            </div>
+            <div class="r2c2HW6">                
+                The C# code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework6/C%23/lvlRandomWalk/Attack.cs'>link1</a> and <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework6/C%23/lvlRandomWalk/AttackForm.cs'>link2</a>
+
+                <br>
+
+                <div class="col">
+                    <video controls width="100%" height="75%">
+                        <source src="https://github.com/Ninjabippo1205/Statistics/raw/main/videos/HW6/HW6.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+            <div class="r3c1HW6">
+                JavaScript
+            </div>
+            <div class="r3c2HW6">                
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework6/JavaScript/HW6_JS.html'> link </a>
+
+                <br>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework6/JavaScript/HW6_JS.html">link</a>
+            </div>
+            <div class="r4c1HW6">
+                Theory
+            </div>
+            <div class="r4c2HW6">                
+                The answers of the homework 6 can be found on <a href=''>Gambler's Ruin Problem</a>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BMZDuF6m26JmA6MCubnXFN+NTQS/lQJ5z3OzkD6QSwbr5M+r8xTVq6f430nhRQ2SG8ID8QGrz2wATlYqBwibnA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\filip\\OneDrive\\Desktop\\Statistics\\Homework 6\\C#\\lvlRandomWalk\\lvlRandomWalk.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\filip\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\filip\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\filip\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\filip\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+  ],
+  "logs": []
+}
