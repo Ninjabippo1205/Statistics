@@ -322,7 +322,7 @@
                 Theory
             </div>
             <div class="r4c2HW6">                
-                The answers of the homework 6 can be found on <a href=''>Gambler's Ruin Problem</a>
+                The answers of the homework 6 can be found on <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Gambler's%20Ruin%20Problem.pdf'>Gambler's Ruin Problem</a>
             </div>
         </div>
     </body>
