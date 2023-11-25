@@ -334,11 +334,11 @@
                 JavaScript
             </div>
             <div class="r3c2HW7">                
-                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework7/JavaScript/HW7_JS.html'> link </a>
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework7/HW7_JS.html'> link </a>
 
                 <br>
 
-                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework7/JavaScript/HW7_JS.html">link</a>
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework7/HW7_JS.html">link</a>
             </div>
             <div class="r4c1HW7">
                 Theory
