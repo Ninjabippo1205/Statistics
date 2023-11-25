@@ -353,7 +353,7 @@
                 Th1: The LLN Meaning, Proof, Simulations
             </div>
             <div class="thr1c2">
-                Thesis 1 can be found on this <a href="">page</a>
+                Thesis 1 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH1_%20Law%20of%20large%20numbers%20LLN.pdf">page</a>
             </div>
         </div>
 
@@ -362,7 +362,7 @@
                 Th2: The CLT Meaning, Proof, Simulations
             </div>
             <div class="thr1c2">
-                Thesis 2 can be found on this <a href="">page</a>
+                Thesis 2 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH2_%20Central%20Limit%20Theorem%20CLT.pdf">page</a>
             </div>
         </div>
 
@@ -371,7 +371,7 @@
                 Th3: The Gaussian Distribution Meaning, Derivations, Simulations
             </div>
             <div class="thr1c2">
-                Thesis 3 can be found on this <a href="">page</a>
+                Thesis 3 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH3_%20The%20Gaussian%20Distribution.pdf">page</a>
             </div>
         </div>
 
@@ -380,7 +380,7 @@
                 Th4: The Glivenko–Cantelli theorem, Proof, Simulations
             </div>
             <div class="thr1c2">
-                Thesis 4 can be found on this <a href="">page</a>
+                Thesis 4 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Th4_%20The%20Glivenko–Cantelli%20theorem.pdf">page</a>
             </div>
         </div>
 
@@ -389,7 +389,7 @@
                 Th5: Statistical Distributions: Continuous, Discrete, Properties and simulations
             </div>
             <div class="thr1c2">
-                Thesis 5 can be found on this <a href="">page</a>
+                Thesis 5 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH5_%20Statistical%20Distributions.pdf">page</a>
             </div>
         </div>     
 
@@ -398,7 +398,7 @@
                 Th6:  Algorithms for random variates generation
             </div>
             <div class="thr1c2">
-                Thesis 6 can be found on this <a href="">page</a>
+                Thesis 6 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH6_%20Algorithms%20for%20random%20variates%20generation.pdf">page</a>
             </div>
         </div>   
 
@@ -407,7 +407,7 @@
                 Th7: "Online" Algorithms (Data Streams): Ideas and code
             </div>
             <div class="thr1c2">
-                Thesis 7 can be found on this <a href="">page</a>
+                Thesis 7 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH7_%20Online_%20Algorithms%20(Data%20Streams)_%20Ideas%20and%20code.pdf">page</a>
             </div>
         </div>
 
@@ -416,7 +416,7 @@
                 Th8:  Stochastic processes and SDE's
             </div>
             <div class="thr1c2">
-                Thesis 8 can be found on this <a href="">page</a>
+                Thesis 8 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Th8_%20%20Stochastic%20processes%20and%20SDE's.pdf">page</a>
             </div>
         </div>
 
@@ -425,7 +425,7 @@
                 Th9: The Poisson Process: Meaning, Properties,Simulations
             </div>
             <div class="thr1c2">
-                Thesis 9 can be found on this <a href="">page</a>
+                Thesis 9 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/TH9_%20Poisson%20point%20process.pdf">page</a>
             </div>
         </div>
 
@@ -434,7 +434,7 @@
                 Th10: The Viener process and the GBM, Derivations and simulations
             </div>
             <div class="thr1c2">
-                Thesis 10 can be found on this <a href="">page</a>
+                Thesis 10 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Th10_%20The%20Wiener%20process%20and%20the%20GBM%2C%20Derivations%20and%20simulations%20.pdf">page</a>
             </div>
         </div>
 
@@ -443,7 +443,7 @@
                 Th11. The functional CLT (Donsker's invariance principle): Proof, Simulations
             </div>
             <div class="thr1c2">
-                Thesis 11 can be found on this <a href="">page</a>
+                Thesis 11 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Th11_%20The%20functional%20CLT%20(Donsker's%20invariance%20principle)_%20Proof%2C%20Simulations.pdf">page</a>
             </div>
         </div>
 
@@ -452,7 +452,7 @@
                 Th12: Ito Integration ans Calculus, Concept and Didactical Simulations
             </div>
             <div class="thr1c2">
-                Thesis 12 can be found on this <a href="">page</a>
+                Thesis 12 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Th12_%20Ito%20Integration%20and%20Calculus%2C%20Concept%20and%20Didactical%20Simulations.pdf">page</a>
             </div>
         </div>
 
@@ -461,7 +461,7 @@
                 Thesis final
             </div>
             <div class="thr1c2">
-                Final thesis can be found on this <a href="">page</a>
+                Final thesis can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Final%20thesis.pdf">page</a>
             </div>
         </div>
 
