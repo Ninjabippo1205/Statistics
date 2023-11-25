@@ -347,5 +347,123 @@
                 The main SDEs can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Main%20SDEs.pdf">page</a>
             </div>
         </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th1: The LLN Meaning, Proof, Simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 1 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th2: The CLT Meaning, Proof, Simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 2 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th3: The Gaussian Distribution Meaning, Derivations, Simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 3 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th4: The Glivenko–Cantelli theorem, Proof, Simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 4 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th5: Statistical Distributions: Continuous, Discrete, Properties and simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 5 can be found on this <a href="">page</a>
+            </div>
+        </div>     
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th6:  Algorithms for random variates generation
+            </div>
+            <div class="thr1c2">
+                Thesis 6 can be found on this <a href="">page</a>
+            </div>
+        </div>   
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th7: "Online" Algorithms (Data Streams): Ideas and code
+            </div>
+            <div class="thr1c2">
+                Thesis 7 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th8:  Stochastic processes and SDE's
+            </div>
+            <div class="thr1c2">
+                Thesis 8 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th9: The Poisson Process: Meaning, Properties,Simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 9 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th10: The Viener process and the GBM, Derivations and simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 10 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th11. The functional CLT (Donsker's invariance principle): Proof, Simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 11 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Th12: Ito Integration ans Calculus, Concept and Didactical Simulations
+            </div>
+            <div class="thr1c2">
+                Thesis 12 can be found on this <a href="">page</a>
+            </div>
+        </div>
+
+        <div class="thesisgrid">
+            <div class="thr1c1">
+                Thesis final
+            </div>
+            <div class="thr1c2">
+                Final thesis can be found on this <a href="">page</a>
+            </div>
+        </div>
+
     </body>
 </html>

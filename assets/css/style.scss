@@ -429,3 +429,31 @@
     grid-area: mnnn;
     color: white;
 }
+
+////////////////////////////////////////////
+
+.thesisgrid{
+    display: grid;
+    grid-template:
+    'ac ce'/110px 1fr;
+    width: 100%;
+}
+
+.thesisgrid > div{
+    align-self: center;
+    text-align: center;
+    border: 3px solid yellowgreen;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+.thr1c1{
+    grid-area: ac;
+    color: white;
+}
+.thr1c2{
+    grid-area: ce;
+    color: white;
+}
