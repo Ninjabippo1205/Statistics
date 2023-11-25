@@ -434,7 +434,7 @@
                 Th10: The Viener process and the GBM, Derivations and simulations
             </div>
             <div class="thr1c2">
-                Thesis 10 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Th10_%20The%20Wiener%20process%20and%20the%20GBM%2C%20Derivations%20and%20simulations%20.pdf">page</a>
+                Thesis 10 can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Th10_%20The%20Wiener%20process%20and%20the%20GBM%2C%20Derivations%20and%20simulations.pdf">page</a>
             </div>
         </div>
 
