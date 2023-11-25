@@ -325,5 +325,27 @@
                 The answers of the homework 6 can be found on <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Gambler's%20Ruin%20Problem.pdf">Gambler's Ruin Problem</a>
             </div>
         </div>
+
+        <div class="gridHomework7">
+            <div class="r1HW7">
+                Homework 7
+            </div>           
+            <div class="r3c1HW7">
+                JavaScript
+            </div>
+            <div class="r3c2HW7">                
+                The JavaScript code can be found by clicking the <a href='https://github.com/Ninjabippo1205/Statistics/blob/main/homeworks/homework7/JavaScript/HW7_JS.html'> link </a>
+
+                <br>
+
+                The resulting web page can be visited by clicking this <a href="https://ninjabippo1205.github.io/Statistics/homeworks/homework7/JavaScript/HW7_JS.html">link</a>
+            </div>
+            <div class="r4c1HW7">
+                Theory
+            </div>
+            <div class="r4c2HW7">                
+                The main SDEs can be found on this <a href="https://github.com/Ninjabippo1205/Statistics/blob/main/thesis/Main%20SDEs.pdf">page</a>
+            </div>
+        </div>
     </body>
 </html>
